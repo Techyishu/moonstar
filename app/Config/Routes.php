@@ -39,6 +39,7 @@ $routes->get('page/(:segment)', 'Pages::view/$1');
  */
 
 // Admin Authentication (No middleware)
+$routes->addRedirect('admin', 'admin/login');
 $routes->get('admin/login', 'Admin\Auth::login');
 $routes->post('admin/login', 'Admin\Auth::attemptLogin');
 $routes->get('admin/logout', 'Admin\Auth::logout');

@@ -58,8 +58,11 @@ This guide outlines the steps to deploy the Moonstar School application to Hosti
     *   *Alternatively, Hostinger "Git" section often has an "Install Composer Dependencies" checkbox or button.*
 2.  If using Terminal/SSH, navigate to your folder:
     ```bash
+    # Option A (Standard):
     cd public_html
-    # or cd public_html/moonstar
+
+    # Option B (Newer Accounts): 
+    cd domains/your-domain.com/public_html
     ```
 3.  Run Composer install:
     ```bash
