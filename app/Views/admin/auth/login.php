@@ -94,7 +94,7 @@
                     <div class="input-group">
                         <span class="input-group-text"><i class="bi bi-envelope"></i></span>
                         <input type="email" class="form-control" id="email" name="email" 
-                               value="<?= old('email') ?>" required placeholder="admin@moonstar.test">
+                               value="<?= old('email') ?>" required placeholder="Enter your email">
                     </div>
                 </div>
                 
@@ -111,18 +111,6 @@
                     <i class="bi bi-box-arrow-in-right me-2"></i>Sign In
                 </button>
             </form>
-            
-            <hr class="my-4">
-            
-            <div class="text-center">
-                <p class="text-muted small mb-2">
-                    <i class="bi bi-info-circle me-1"></i>Default Credentials
-                </p>
-                <p class="small mb-0">
-                    <strong>Email:</strong> admin@moonstar.test<br>
-                    <strong>Password:</strong> Moon@1234
-                </p>
-            </div>
             
             <div class="text-center mt-3">
                 <a href="<?= base_url() ?>" class="small text-decoration-none">
