@@ -70,7 +70,7 @@ class CreateAdmin extends BaseCommand
         $data = [
             'name' => $name,
             'email' => $email,
-            'password' => password_hash($password, PASSWORD_DEFAULT),
+            'password' => $password, // Model will hash this automatically
             'role' => 'admin',
             'status' => 1,
         ];
