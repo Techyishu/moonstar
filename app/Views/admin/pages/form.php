@@ -2,68 +2,91 @@
 
 <?= $this->section('content') ?>
 
-<div class="mb-3">
-    <a href="<?= base_url('admin/pages') ?>" class="btn btn-sm btn-secondary">
-        <i class="bi bi-arrow-left"></i> Back
+<div class="mb-6">
+    <a href="<?= base_url('admin/pages') ?>" class="inline-flex items-center text-sm font-medium text-slate-500 hover:text-slate-700">
+        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        Back to Pages
     </a>
 </div>
 
-<div class="card">
-    <div class="card-header">
-        <h5><?= isset($page) ? 'Edit Page' : 'Create Page' ?></h5>
+<div class="bg-white rounded-lg shadow border border-slate-200 overflow-hidden">
+    <div class="border-b border-slate-200 px-6 py-4">
+        <h3 class="text-lg font-medium leading-6 text-slate-900"><?= isset($page) ? 'Edit Page' : 'Create Page' ?></h3>
     </div>
-    <div class="card-body">
-        <form action="<?= isset($page) ? base_url('admin/pages/update/' . $page['id']) : base_url('admin/pages/store') ?>" 
-              method="post">
-            <?= csrf_field() ?>
-            
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label class="form-label">Title *</label>
-                    <input type="text" class="form-control" name="title" required
-                           value="<?= old('title', $page['title'] ?? '') ?>" id="pageTitle">
+    
+    <form action="<?= isset($page) ? base_url('admin/pages/update/' . $page['id']) : base_url('admin/pages/store') ?>" 
+          method="post" class="p-6">
+        <?= csrf_field() ?>
+        
+        <div class="grid grid-cols-1 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label for="title" class="block text-sm font-medium text-slate-700">Title <span class="text-red-500">*</span></label>
+                    <div class="mt-1">
+                        <input type="text" name="title" id="pageTitle" required
+                               value="<?= old('title', $page['title'] ?? '') ?>"
+                               class="block w-full rounded-md border-slate-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm p-2 border">
+                    </div>
                 </div>
-                
-                <div class="col-md-6 mb-3">
-                    <label class="form-label">Slug * <small class="text-muted">(URL-friendly)</small></label>
-                    <input type="text" class="form-control" name="slug" required
-                           value="<?= old('slug', $page['slug'] ?? '') ?>" id="pageSlug">
-                    <small class="text-muted">Will be accessible at: /page/your-slug</small>
-                </div>
-            </div>
-            
-            <div class="mb-3">
-                <label class="form-label">Content *</label>
-                <textarea class="form-control" name="content" id="pageContent" rows="15"><?= old('content', $page['content'] ?? '') ?></textarea>
-            </div>
-            
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label class="form-label">Meta Title</label>
-                    <input type="text" class="form-control" name="meta_title"
-                           value="<?= old('meta_title', $page['meta_title'] ?? '') ?>">
-                </div>
-                
-                <div class="col-md-6 mb-3">
-                    <label class="form-label">Meta Description</label>
-                    <input type="text" class="form-control" name="meta_description"
-                           value="<?= old('meta_description', $page['meta_description'] ?? '') ?>">
+
+                <div>
+                    <label for="slug" class="block text-sm font-medium text-slate-700">Slug <span class="text-red-500">*</span></label>
+                    <div class="mt-1">
+                        <input type="text" name="slug" id="pageSlug" required
+                               value="<?= old('slug', $page['slug'] ?? '') ?>"
+                               class="block w-full rounded-md border-slate-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm p-2 border bg-slate-50">
+                        <p class="mt-1 text-xs text-slate-500">URL-friendly version of the title. Accessible at: /page/your-slug</p>
+                    </div>
                 </div>
             </div>
-            
-            <div class="mb-3">
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" name="status" value="1"
-                           <?= (old('status', $page['status'] ?? 1) == 1) ? 'checked' : '' ?>>
-                    <label class="form-check-label">Published</label>
+
+            <div>
+                <label for="pageContent" class="block text-sm font-medium text-slate-700 mb-2">Content <span class="text-red-500">*</span></label>
+                <textarea name="content" id="pageContent" rows="15"
+                          class="block w-full rounded-md border-slate-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm p-2 border"><?= old('content', $page['content'] ?? '') ?></textarea>
+            </div>
+
+            <div class="bg-slate-50 p-4 rounded-md border border-slate-200">
+                <h4 class="text-sm font-medium text-slate-900 mb-4">SEO Settings</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                     <div>
+                        <label for="meta_title" class="block text-sm font-medium text-slate-700">Meta Title</label>
+                        <input type="text" name="meta_title" id="meta_title"
+                               value="<?= old('meta_title', $page['meta_title'] ?? '') ?>"
+                               class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm p-2 border">
+                    </div>
+                    <div>
+                        <label for="meta_description" class="block text-sm font-medium text-slate-700">Meta Description</label>
+                        <input type="text" name="meta_description" id="meta_description"
+                               value="<?= old('meta_description', $page['meta_description'] ?? '') ?>"
+                               class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm p-2 border">
+                    </div>
                 </div>
             </div>
-            
-            <button type="submit" class="btn btn-primary">
-                <i class="bi bi-save"></i> Save Page
+
+            <div class="flex items-start">
+                <div class="flex h-5 items-center">
+                    <input id="status" name="status" type="checkbox" value="1"
+                           <?= (old('status', $page['status'] ?? 1) == 1) ? 'checked' : '' ?>
+                           class="h-4 w-4 rounded border-slate-300 text-primary-600 focus:ring-primary-500">
+                </div>
+                <div class="ml-3 text-sm">
+                    <label for="status" class="font-medium text-slate-700">Published</label>
+                    <p class="text-slate-500">Visible to the public.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-6 flex items-center justify-end gap-x-6">
+            <a href="<?= base_url('admin/pages') ?>" class="text-sm font-semibold leading-6 text-slate-900">Cancel</a>
+            <button type="submit"
+                    class="rounded-md bg-primary-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600">
+                Save Page
             </button>
-        </form>
-    </div>
+        </div>
+    </form>
 </div>
 
 <?= $this->endSection() ?>
