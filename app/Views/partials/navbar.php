@@ -81,7 +81,7 @@ $current_uri = uri_string();
                         x-transition:leave-end="opacity-0 translate-y-2"
                         class="absolute left-0 mt-0 w-64 rounded-xl shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none overflow-hidden z-50">
                         <div class="py-2">
-                            <a href="<?= base_url('page/disclosure') ?>"
+                            <a href="<?= base_url('disclosure') ?>"
                                 class="flex items-center px-4 py-3 text-sm text-slate-700 hover:bg-slate-50 hover:text-primary-600 transition-colors">
                                 <svg class="w-5 h-5 mr-3 text-slate-400" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
@@ -90,7 +90,7 @@ $current_uri = uri_string();
                                 </svg>
                                 Disclosure
                             </a>
-                            <a href="<?= base_url('page/sports') ?>"
+                            <a href="<?= base_url('sports') ?>"
                                 class="flex items-center px-4 py-3 text-sm text-slate-700 hover:bg-slate-50 hover:text-primary-600 transition-colors">
                                 <svg class="w-5 h-5 mr-3 text-slate-400" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
@@ -108,7 +108,7 @@ $current_uri = uri_string();
                                 </svg>
                                 School Leaving Certificate
                             </a>
-                            <a href="<?= base_url('page/bus-routes') ?>"
+                            <a href="<?= base_url('bus-routes') ?>"
                                 class="flex items-center px-4 py-3 text-sm text-slate-700 hover:bg-slate-50 hover:text-primary-600 transition-colors">
                                 <svg class="w-5 h-5 mr-3 text-slate-400" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
@@ -117,7 +117,7 @@ $current_uri = uri_string();
                                 </svg>
                                 Bus Routes
                             </a>
-                            <a href="<?= base_url('page/fee-structure') ?>"
+                            <a href="<?= base_url('fee-structure') ?>"
                                 class="flex items-center px-4 py-3 text-sm text-slate-700 hover:bg-slate-50 hover:text-primary-600 transition-colors">
                                 <svg class="w-5 h-5 mr-3 text-slate-400" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
@@ -198,16 +198,16 @@ $current_uri = uri_string();
                     </svg>
                 </button>
                 <div x-show="open" class="pl-4 space-y-1">
-                    <a href="<?= base_url('page/disclosure') ?>"
+                    <a href="<?= base_url('disclosure') ?>"
                         class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-50">Disclosure</a>
-                    <a href="<?= base_url('page/sports') ?>"
+                    <a href="<?= base_url('sports') ?>"
                         class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-50">Sports</a>
                     <a href="<?= base_url('slc') ?>"
                         class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-50">SLC</a>
-                    <a href="<?= base_url('page/bus-routes') ?>"
+                    <a href="<?= base_url('bus-routes') ?>"
                         class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-50">Bus
                         Routes</a>
-                    <a href="<?= base_url('page/fee-structure') ?>"
+                    <a href="<?= base_url('fee-structure') ?>"
                         class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-50">Fee
                         Structure</a>
                 </div>

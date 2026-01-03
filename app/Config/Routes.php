@@ -32,6 +32,12 @@ $routes->post('contact/submit', 'Contact::submit');
 // School Leaving Certificate
 $routes->get('slc', 'SchoolLeavingCertificate::index');
 
+// Additional Pages
+$routes->get('disclosure', 'Disclosure::index');
+$routes->get('sports', 'Sports::index');
+$routes->get('bus-routes', 'BusRoutes::index');
+$routes->get('fee-structure', 'FeeStructure::index');
+
 // Dynamic Pages (from database)
 $routes->get('page/(:segment)', 'Pages::view/$1');
 
