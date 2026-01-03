@@ -77,6 +77,14 @@
                     'SLC' => ['url' => 'admin/slc', 'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>'],
                 ];
 
+                // Add Content Pages section
+                $contentPages = [
+                    'disclosure' => 'Edit Disclosure',
+                    'sports' => 'Edit Sports',
+                    'bus-routes' => 'Edit Bus Routes',
+                    'fee-structure' => 'Edit Fee Structure',
+                ];
+
                 if (session()->get('role') === 'superadmin') {
                     $menuItems['Users'] = ['url' => 'admin/users', 'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>'];
                 }
@@ -94,6 +102,32 @@
                         <?= $label ?>
                     </a>
                 <?php endforeach; ?>
+
+                <!-- Content Pages Section -->
+                <div class="pt-4 mt-4 border-t border-slate-700/50">
+                    <p class="px-4 mb-2 text-xs font-semibold text-slate-500 uppercase tracking-wider">Content Pages</p>
+                    <?php
+                    $db = \Config\Database::connect();
+                    foreach ($contentPages as $slug => $label):
+                        $result = $db->query("SELECT id FROM pages WHERE slug = ? LIMIT 1", [$slug])->getRow();
+                        if ($result):
+                            $editUrl = 'admin/pages/edit/' . $result->id;
+                            $isActive = strpos(current_url(), $editUrl) !== false;
+                            ?>
+                            <a href="<?= base_url($editUrl) ?>"
+                                class="flex items-center px-4 py-2.5 text-sm font-medium rounded-lg transition-colors <?= $isActive ? 'bg-primary-600 text-white shadow-md' : 'text-slate-300 hover:text-white hover:bg-white/5' ?>">
+                                <svg class="flex-shrink-0 w-4 h-4 mr-3 <?= $isActive ? 'text-white' : 'text-slate-400' ?>"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                                </svg>
+                                <?= $label ?>
+                            </a>
+                            <?php
+                        endif;
+                    endforeach;
+                    ?>
+                </div>
             </nav>
 
             <div class="px-4 mt-auto">
