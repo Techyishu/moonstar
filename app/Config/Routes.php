@@ -121,6 +121,15 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     $routes->post('slc/update/(:num)', 'Admin\SchoolLeavingCertificates::update/$1');
     $routes->get('slc/delete/(:num)', 'Admin\SchoolLeavingCertificates::delete/$1');
 
+
+    // Disclosure Documents
+    $routes->get('disclosure', 'Admin\\DisclosureDocuments::index');
+    $routes->get('disclosure/create', 'Admin\\DisclosureDocuments::create');
+    $routes->post('disclosure/store', 'Admin\\DisclosureDocuments::store');
+    $routes->get('disclosure/edit/(:num)', 'Admin\\DisclosureDocuments::edit/$1');
+    $routes->post('disclosure/update/(:num)', 'Admin\\DisclosureDocuments::update/$1');
+    $routes->get('disclosure/delete/(:num)', 'Admin\\DisclosureDocuments::delete/$1');
+
     // Users Management (Superadmin Only)
     $routes->get('users', 'Admin\AdminUsers::index');
     $routes->get('users/create', 'Admin\AdminUsers::create');

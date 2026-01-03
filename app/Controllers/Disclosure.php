@@ -2,26 +2,25 @@
 
 namespace App\Controllers;
 
-use App\Models\PageModel;
+use App\Models\DisclosureDocumentModel;
 
 class Disclosure extends BaseController
 {
     public function index()
     {
-        $pageModel = new PageModel();
+        $documentModel = new DisclosureDocumentModel();
 
-        // Check if content exists in database
-        $page = $pageModel->where('slug', 'disclosure')->where('status', 1)->first();
+        // Get all active documents ordered by display order
+        $documents = $documentModel
+            ->where('status', 1)
+            ->orderBy('display_order', 'ASC')
+            ->orderBy('created_at', 'DESC')
+            ->findAll();
 
         $data = [
             'title' => 'Mandatory Public Disclosure - Moonstar School',
-            'page' => $page,
+            'documents' => $documents,
         ];
-
-        // If database content exists, use generic view; otherwise use custom template
-        if ($page && !empty($page['content'])) {
-            return view('pages/view', $data);
-        }
 
         return view('disclosure/index', $data);
     }
