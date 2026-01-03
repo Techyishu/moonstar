@@ -2,26 +2,24 @@
 
 namespace App\Controllers;
 
-use App\Models\PageModel;
+use App\Models\BusRouteModel;
 
 class BusRoutes extends BaseController
 {
     public function index()
     {
-        $pageModel = new PageModel();
+        $routeModel = new BusRouteModel();
 
-        // Check if content exists in database
-        $page = $pageModel->where('slug', 'bus-routes')->where('status', 1)->first();
+        // Get all active routes
+        $routes = $routeModel
+            ->where('status', 1)
+            ->orderBy('route_number', 'ASC')
+            ->findAll();
 
         $data = [
             'title' => 'Bus Routes & Transport - Moonstar School',
-            'page' => $page,
+            'routes' => $routes,
         ];
-
-        // If database content exists, use generic view; otherwise use custom template
-        if ($page && !empty($page['content'])) {
-            return view('pages/view', $data);
-        }
 
         return view('bus-routes/index', $data);
     }

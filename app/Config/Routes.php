@@ -130,6 +130,22 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     $routes->post('disclosure/update/(:num)', 'Admin\DisclosureDocuments::update/$1');
     $routes->get('disclosure/delete/(:num)', 'Admin\DisclosureDocuments::delete/$1');
 
+    // Bus Routes
+    $routes->get('bus-routes', 'Admin\BusRoutes::index');
+    $routes->get('bus-routes/create', 'Admin\BusRoutes::create');
+    $routes->post('bus-routes/store', 'Admin\BusRoutes::store');
+    $routes->get('bus-routes/edit/(:num)', 'Admin\BusRoutes::edit/$1');
+    $routes->post('bus-routes/update/(:num)', 'Admin\BusRoutes::update/$1');
+    $routes->get('bus-routes/delete/(:num)', 'Admin\BusRoutes::delete/$1');
+
+    // Fee Structure
+    $routes->get('fee-structure', 'Admin\FeeStructure::index');
+    $routes->get('fee-structure/create', 'Admin\FeeStructure::create');
+    $routes->post('fee-structure/store', 'Admin\FeeStructure::store');
+    $routes->get('fee-structure/edit/(:num)', 'Admin\FeeStructure::edit/$1');
+    $routes->post('fee-structure/update/(:num)', 'Admin\FeeStructure::update/$1');
+    $routes->get('fee-structure/delete/(:num)', 'Admin\FeeStructure::delete/$1');
+
     // Users Management (Superadmin Only)
     $routes->get('users', 'Admin\AdminUsers::index');
     $routes->get('users/create', 'Admin\AdminUsers::create');

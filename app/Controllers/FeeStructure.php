@@ -2,26 +2,24 @@
 
 namespace App\Controllers;
 
-use App\Models\PageModel;
+use App\Models\FeeStructureModel;
 
 class FeeStructure extends BaseController
 {
     public function index()
     {
-        $pageModel = new PageModel();
+        $feeModel = new FeeStructureModel();
 
-        // Check if content exists in database
-        $page = $pageModel->where('slug', 'fee-structure')->where('status', 1)->first();
+        // Get all active fee structures
+        $fees = $feeModel
+            ->where('status', 1)
+            ->orderBy('display_order', 'ASC')
+            ->findAll();
 
         $data = [
             'title' => 'Fee Structure - Moonstar School',
-            'page' => $page,
+            'fees' => $fees,
         ];
-
-        // If database content exists, use generic view; otherwise use custom template
-        if ($page && !empty($page['content'])) {
-            return view('pages/view', $data);
-        }
 
         return view('fee-structure/index', $data);
     }
