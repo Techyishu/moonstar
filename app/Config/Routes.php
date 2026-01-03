@@ -29,6 +29,9 @@ $routes->get('gallery', 'Gallery::index');
 $routes->get('contact', 'Contact::index');
 $routes->post('contact/submit', 'Contact::submit');
 
+// School Leaving Certificate
+$routes->get('slc', 'SchoolLeavingCertificate::index');
+
 // Dynamic Pages (from database)
 $routes->get('page/(:segment)', 'Pages::view/$1');
 
@@ -103,6 +106,14 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     $routes->get('gallery/edit/(:num)', 'Admin\AdminGallery::edit/$1');
     $routes->post('gallery/update/(:num)', 'Admin\AdminGallery::update/$1');
     $routes->get('gallery/delete/(:num)', 'Admin\AdminGallery::delete/$1');
+
+    // School Leaving Certificates
+    $routes->get('slc', 'Admin\SchoolLeavingCertificates::index');
+    $routes->get('slc/create', 'Admin\SchoolLeavingCertificates::create');
+    $routes->post('slc/store', 'Admin\SchoolLeavingCertificates::store');
+    $routes->get('slc/edit/(:num)', 'Admin\SchoolLeavingCertificates::edit/$1');
+    $routes->post('slc/update/(:num)', 'Admin\SchoolLeavingCertificates::update/$1');
+    $routes->get('slc/delete/(:num)', 'Admin\SchoolLeavingCertificates::delete/$1');
 
     // Users Management (Superadmin Only)
     $routes->get('users', 'Admin\AdminUsers::index');
