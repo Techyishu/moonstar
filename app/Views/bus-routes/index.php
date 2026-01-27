@@ -3,36 +3,37 @@
 <?= $this->section('content') ?>
 
 <!-- Hero Header -->
-<section class="relative bg-primary-950 py-24 px-4 sm:px-6 lg:px-8 text-center overflow-hidden">
+<section class="relative bg-primary-950 py-16 md:py-24 px-4 sm:px-6 lg:px-8 text-center overflow-hidden">
     <div class="absolute inset-0 z-0">
         <div
-            class="absolute top-0 right-0 w-96 h-96 bg-accent-500 rounded-full blur-[128px] opacity-20 transform translate-x-1/2 -translate-y-1/2">
+            class="absolute top-0 right-0 w-64 md:w-96 h-64 md:h-96 bg-accent-500 rounded-full blur-[128px] opacity-20 transform translate-x-1/2 -translate-y-1/2">
         </div>
         <div
-            class="absolute bottom-0 left-0 w-96 h-96 bg-primary-600 rounded-full blur-[128px] opacity-20 transform -translate-x-1/2 translate-y-1/2">
+            class="absolute bottom-0 left-0 w-64 md:w-96 h-64 md:h-96 bg-primary-600 rounded-full blur-[128px] opacity-20 transform -translate-x-1/2 translate-y-1/2">
         </div>
     </div>
     <div class="relative z-10 max-w-3xl mx-auto">
-        <h1 class="text-4xl md:text-5xl font-bold font-heading text-white mb-6">Bus Routes & Transport</h1>
-        <p class="text-lg text-primary-200">Safe and reliable transport services with GPS tracking</p>
+        <h1 class="text-3xl md:text-5xl font-bold font-heading text-white mb-4 md:mb-6">Bus Routes & Transport</h1>
+        <p class="text-base md:text-lg text-primary-200">Safe and reliable transport services with GPS tracking</p>
     </div>
 </section>
 
 <!-- Content Section -->
-<section class="py-20 bg-slate-50">
+<section class="py-12 md:py-20 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- Introduction -->
-        <div class="bg-white rounded-2xl shadow-lg p-8 mb-12 border border-slate-100">
-            <div class="flex items-start space-x-4">
-                <div class="flex-shrink-0">
-                    <svg class="w-12 h-12 text-accent-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="bg-white rounded-2xl shadow-lg p-5 md:p-8 mb-8 md:mb-12 border border-slate-100">
+            <div class="flex flex-col md:flex-row items-start md:space-x-4">
+                <div class="flex-shrink-0 mb-4 md:mb-0">
+                    <svg class="w-10 h-10 md:w-12 md:h-12 text-accent-600" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                     </svg>
                 </div>
                 <div>
-                    <h2 class="text-2xl font-bold text-slate-900 mb-4">Transport Services</h2>
+                    <h2 class="text-xl md:text-2xl font-bold text-slate-900 mb-3 md:mb-4">Transport Services</h2>
                     <p class="text-slate-600 leading-relaxed mb-4">Moonstar School provides safe and reliable transport
                         services covering major areas of the city. All our buses are equipped with:</p>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
@@ -183,7 +184,7 @@
                             new registrations.</p>
                         <div class="space-y-2 text-sm">
                             <p class="font-medium text-slate-900">📞 Transport Office: +91 123 456 7890</p>
-                            <p class="font-medium text-slate-900">📧 Email: transport@moonstar.edu</p>
+                            <p class="font-medium text-slate-900">📧 Email: moonstar.gharounda@gmail.com</p>
                         </div>
                     </div>
                 </div>

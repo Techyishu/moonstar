@@ -23,9 +23,11 @@ $current_uri = uri_string();
                     <div>
                         <span
                             class="block text-xl font-heading font-bold text-slate-900 leading-none group-hover:text-primary-600 transition-colors"
-                            :class="{ 'text-slate-900': scrolled, 'text-white': !scrolled && !mobileMenuOpen }">Moonstar</span>
+                            :class="{ 'text-slate-900': scrolled, 'text-white': !scrolled && !mobileMenuOpen }">Moon
+                            Star</span>
                         <span class="block text-xs font-medium text-slate-500 uppercase tracking-widest"
-                            :class="{ 'text-slate-500': scrolled, 'text-primary-200': !scrolled && !mobileMenuOpen }">School</span>
+                            :class="{ 'text-slate-500': scrolled, 'text-primary-200': !scrolled && !mobileMenuOpen }">Public
+                            School</span>
                     </div>
                 </a>
             </div>

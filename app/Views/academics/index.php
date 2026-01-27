@@ -3,28 +3,29 @@
 <?= $this->section('content') ?>
 
 <!-- Page Header -->
-<section class="relative bg-primary-950 py-24 px-4 sm:px-6 lg:px-8 text-center overflow-hidden">
+<section class="relative bg-primary-950 py-16 md:py-24 px-4 sm:px-6 lg:px-8 text-center overflow-hidden">
     <div class="absolute inset-0 z-0">
         <div
-            class="absolute top-0 right-0 w-96 h-96 bg-accent-500 rounded-full blur-[128px] opacity-20 transform translate-x-1/2 -translate-y-1/2">
+            class="absolute top-0 right-0 w-64 md:w-96 h-64 md:h-96 bg-accent-500 rounded-full blur-[128px] opacity-20 transform translate-x-1/2 -translate-y-1/2">
         </div>
         <div
-            class="absolute bottom-0 left-0 w-96 h-96 bg-primary-600 rounded-full blur-[128px] opacity-20 transform -translate-x-1/2 translate-y-1/2">
+            class="absolute bottom-0 left-0 w-64 md:w-96 h-64 md:h-96 bg-primary-600 rounded-full blur-[128px] opacity-20 transform -translate-x-1/2 translate-y-1/2">
         </div>
     </div>
 
     <div class="relative z-10 max-w-3xl mx-auto">
-        <h1 class="text-4xl md:text-5xl font-bold font-heading text-white mb-6">Academic Excellence</h1>
-        <p class="text-lg text-primary-200 mb-8 max-w-2xl mx-auto">Nurturing curiosity, critical thinking, and character
+        <h1 class="text-3xl md:text-5xl font-bold font-heading text-white mb-4 md:mb-6">Academic Excellence</h1>
+        <p class="text-base md:text-lg text-primary-200 mb-6 md:mb-8 max-w-2xl mx-auto">Nurturing curiosity, critical
+            thinking, and character
             from early years to graduation.</p>
     </div>
 </section>
 
 <!-- Introduction -->
-<section class="py-20 bg-white">
+<section class="py-12 md:py-20 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-bold font-heading text-slate-900 mb-6">A Journey of Discovery</h2>
-        <p class="text-lg text-slate-600 leading-relaxed">
+        <h2 class="text-2xl md:text-3xl font-bold font-heading text-slate-900 mb-4 md:mb-6">A Journey of Discovery</h2>
+        <p class="text-base md:text-lg text-slate-600 leading-relaxed">
             At Moonstar, we offer a student-centered curriculum that balances academic rigor with creative exploration.
             Our holistic approach ensures that students not only excel in their studies but also develop the social and
             emotional skills needed to thrive in a complex world.
@@ -33,13 +34,13 @@
 </section>
 
 <!-- Programs Grid -->
-<section class="py-20 bg-slate-50" x-data="{ activeModal: null }">
+<section class="py-12 md:py-20 bg-slate-50" x-data="{ activeModal: null }">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
 
             <!-- Early Childhood -->
             <div
-                class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+                class="bg-white rounded-2xl p-5 md:p-8 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
                 <div
                     class="w-14 h-14 bg-pink-50 rounded-xl flex items-center justify-center text-pink-500 mb-6 group-hover:bg-pink-500 group-hover:text-white transition-colors">
                     <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -313,8 +314,8 @@
                     </div>
                     <div>
                         <p class="text-sm font-bold text-slate-900">Email Admissions</p>
-                        <a href="mailto:admissions@moonstar.edu"
-                            class="text-sm text-primary-600 hover:underline">admissions@moonstar.edu</a>
+                        <a href="mailto:moonstar.gharounda@gmail.com"
+                            class="text-sm text-primary-600 hover:underline">moonstar.gharounda@gmail.com</a>
                     </div>
                 </div>
 

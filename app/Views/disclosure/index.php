@@ -3,37 +3,40 @@
 <?= $this->section('content') ?>
 
 <!-- Hero Header -->
-<section class="relative bg-primary-950 py-24 px-4 sm:px-6 lg:px-8 text-center overflow-hidden">
+<section class="relative bg-primary-950 py-16 md:py-24 px-4 sm:px-6 lg:px-8 text-center overflow-hidden">
     <div class="absolute inset-0 z-0">
         <div
-            class="absolute top-0 right-0 w-96 h-96 bg-accent-500 rounded-full blur-[128px] opacity-20 transform translate-x-1/2 -translate-y-1/2">
+            class="absolute top-0 right-0 w-64 md:w-96 h-64 md:h-96 bg-accent-500 rounded-full blur-[128px] opacity-20 transform translate-x-1/2 -translate-y-1/2">
         </div>
         <div
-            class="absolute bottom-0 left-0 w-96 h-96 bg-primary-600 rounded-full blur-[128px] opacity-20 transform -translate-x-1/2 translate-y-1/2">
+            class="absolute bottom-0 left-0 w-64 md:w-96 h-64 md:h-96 bg-primary-600 rounded-full blur-[128px] opacity-20 transform -translate-x-1/2 translate-y-1/2">
         </div>
     </div>
     <div class="relative z-10 max-w-3xl mx-auto">
-        <h1 class="text-4xl md:text-5xl font-bold font-heading text-white mb-6">Mandatory Public Disclosure</h1>
-        <p class="text-lg text-primary-200">Complete transparency in compliance with CBSE guidelines</p>
+        <h1 class="text-3xl md:text-5xl font-bold font-heading text-white mb-4 md:mb-6">Mandatory Public Disclosure</h1>
+        <p class="text-base md:text-lg text-primary-200">Complete transparency in compliance with CBSE guidelines</p>
     </div>
 </section>
 
 <!-- Content Section -->
-<section class="py-20 bg-slate-50 min-h-[50vh]">
+<section class="py-12 md:py-20 bg-slate-50 min-h-[50vh]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- Introduction -->
-        <div class="bg-white rounded-2xl shadow-lg p-8 mb-10 border border-slate-100">
-            <div class="flex items-start space-x-4">
-                <div class="flex-shrink-0">
-                    <svg class="w-12 h-12 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="bg-white rounded-2xl shadow-lg p-5 md:p-8 mb-8 md:mb-10 border border-slate-100">
+            <div class="flex flex-col md:flex-row items-start md:space-x-4">
+                <div class="flex-shrink-0 mb-4 md:mb-0">
+                    <svg class="w-10 h-10 md:w-12 md:h-12 text-primary-600" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                 </div>
                 <div>
-                    <h2 class="text-2xl font-bold text-slate-900 mb-4">About Mandatory Disclosure</h2>
-                    <p class="text-slate-600 leading-relaxed">In compliance with CBSE guidelines and to maintain
+                    <h2 class="text-xl md:text-2xl font-bold text-slate-900 mb-3 md:mb-4">About Mandatory Disclosure
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed text-sm md:text-base">In compliance with CBSE guidelines
+                        and to maintain
                         complete transparency, Moonstar School provides all essential documents and information for
                         public viewing. These documents are updated regularly and are available for download.</p>
                 </div>
@@ -41,11 +44,11 @@
         </div>
 
         <!-- Documents Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
 
             <!-- Document Card 1 -->
             <div
-                class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-lg transition-shadow group">
+                class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 md:p-6 hover:shadow-lg transition-shadow group">
                 <div class="flex items-start justify-between mb-4">
                     <div
                         class="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center group-hover:bg-primary-100 transition-colors">
@@ -207,7 +210,8 @@
                     <h3 class="text-lg font-semibold text-blue-900 mb-2">Need More Information?</h3>
                     <p class="text-blue-800 text-sm">For any queries related to these documents or to request additional
                         information, please contact our administrative office or email us at <a
-                            href="mailto:info@moonstar.edu" class="underline font-medium">info@moonstar.edu</a></p>
+                            href="mailto:moonstar.gharounda@gmail.com"
+                            class="underline font-medium">moonstar.gharounda@gmail.com</a></p>
                 </div>
             </div>
         </div>

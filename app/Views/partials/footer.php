@@ -1,12 +1,12 @@
 <footer class="bg-primary-950 text-slate-300 relative overflow-hidden">
     <!-- Background Decor -->
     <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-10 pointer-events-none">
-        <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-primary-500 blur-3xl"></div>
-        <div class="absolute bottom-0 left-20 w-72 h-72 rounded-full bg-secondary-500 blur-3xl"></div>
+        <div class="absolute -top-24 -right-24 w-64 md:w-96 h-64 md:h-96 rounded-full bg-primary-500 blur-3xl"></div>
+        <div class="absolute bottom-0 left-20 w-48 md:w-72 h-48 md:h-72 rounded-full bg-secondary-500 blur-3xl"></div>
     </div>
 
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12">
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 md:gap-12">
             <!-- Brand Column -->
             <div class="lg:col-span-4 space-y-6">
                 <a href="<?= base_url() ?>" class="flex items-center gap-2">
@@ -18,30 +18,30 @@
                                 d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                         </svg>
                     </div>
-                    <span class="text-2xl font-bold font-heading text-white">Moonstar</span>
+                    <span class="text-xl font-bold font-heading text-white">Moon Star Public School</span>
                 </a>
                 <p class="text-slate-400 leading-relaxed text-sm">
-                    Moonstar School is dedicated to providing excellence in education, fostering creativity, and
-                    building character. We illuminate young minds to become future leaders.
+                    Moon Star Public School is dedicated to providing excellence in education.
+                    Affiliated to CBSE (Code: 531646).
+                    Streams: Arts, Comm., Non Medical And Medical.
                 </p>
                 <div class="flex space-x-4 pt-2">
-                    <a href="#"
-                        class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary-600 hover:text-white transition-all">
+                    <a href="https://www.facebook.com/moonstarpublicschool" target="_blank"
+                        class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all">
                         <span class="sr-only">Facebook</span>
                         <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                         </svg>
                     </a>
-                    <a href="#"
-                        class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-sky-500 hover:text-white transition-all">
-                        <span class="sr-only">Twitter</span>
+                    <a href="https://www.youtube.com/@moonstarpublicschool" target="_blank"
+                        class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-red-600 hover:text-white transition-all">
+                        <span class="sr-only">Youtube</span>
                         <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                             <path
-                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-                            </path>
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                         </svg>
                     </a>
-                    <a href="#"
+                    <a href="https://www.instagram.com/moonstarpublicschool" target="_blank"
                         class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all">
                         <span class="sr-only">Instagram</span>
                         <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"
@@ -56,7 +56,7 @@
 
             <!-- Links Column -->
             <div class="lg:col-span-2 md:col-span-4">
-                <h3 class="text-white font-heading font-semibold text-lg mb-6">Quick Links</h3>
+                <h3 class="text-white font-heading font-semibold text-base md:text-lg mb-4 md:mb-6">Quick Links</h3>
                 <ul class="space-y-3 text-sm">
                     <li><a href="<?= base_url('about') ?>" class="hover:text-accent-400 transition-colors">About Us</a>
                     </li>
@@ -73,7 +73,7 @@
 
             <!-- Academics Column -->
             <div class="lg:col-span-2 md:col-span-4">
-                <h3 class="text-white font-heading font-semibold text-lg mb-6">Academics</h3>
+                <h3 class="text-white font-heading font-semibold text-base md:text-lg mb-4 md:mb-6">Academics</h3>
                 <ul class="space-y-3 text-sm">
                     <li><a href="#" class="hover:text-accent-400 transition-colors">Kindergarten</a></li>
                     <li><a href="#" class="hover:text-accent-400 transition-colors">Primary School</a></li>
@@ -84,7 +84,7 @@
 
             <!-- Contact Column -->
             <div class="lg:col-span-4 md:col-span-4">
-                <h3 class="text-white font-heading font-semibold text-lg mb-6">Contact Info</h3>
+                <h3 class="text-white font-heading font-semibold text-base md:text-lg mb-4 md:mb-6">Contact Info</h3>
                 <ul class="space-y-4 text-sm">
                     <li class="flex items-start">
                         <svg class="h-5 w-5 text-accent-400 mt-0.5 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24"
@@ -94,7 +94,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
-                        <span>123 Moonstar Avenue, Education City, State 12345</span>
+                        <span>Hassanpur Road, Near Grain Market, Gharaunda (Karnal)-132114</span>
                     </li>
                     <li class="flex items-center">
                         <svg class="h-5 w-5 text-accent-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24"
@@ -102,7 +102,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
-                        <span>+1 (234) 567-8900</span>
+                        <span>+91-7404-266-266, +91-98960-92826</span>
                     </li>
                     <li class="flex items-center">
                         <svg class="h-5 w-5 text-accent-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24"
@@ -110,7 +110,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
-                        <span>admissions@moonstar.edu</span>
+                        <span>moonstar.gharounda@gmail.com</span>
                     </li>
                 </ul>
             </div>
