@@ -141,8 +141,17 @@ class AdminGallery extends BaseController
                     // Delete temp file
                     @unlink(FCPATH . 'uploads/gallery/temp/' . $newName);
 
+                    // Use filename as title, replacing underscores/dashes with spaces
+                    $cleanTitle = pathinfo($file->getClientName(), PATHINFO_FILENAME);
+                    $cleanTitle = str_replace(['_', '-'], ' ', $cleanTitle);
+
+                    // Ensure title meets minimum length requirement (3 chars)
+                    if (strlen($cleanTitle) < 3) {
+                        $cleanTitle .= ' Image';
+                    }
+
                     $data = [
-                        'title' => '',
+                        'title' => $cleanTitle,
                         'description' => '',
                         'image_path' => $newName,
                         'category' => 'general',
