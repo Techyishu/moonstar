@@ -7,7 +7,7 @@
     activeSlide: 0,
     slides: [
         {
-            image: '<?= base_url('uploads/hero/school_building.jpg') ?>',
+            image: '<?= base_url('uploads/hero_bus.jpg') ?>',
             title: 'Welcome to Moon Star',
             subtitle: 'A Legacy of Educational Excellence',
             cta: 'Learn More',
@@ -203,7 +203,8 @@
             <div>
                 <div class="flex items-center justify-between mb-6 md:mb-10">
                     <h2 class="text-2xl md:text-3xl font-bold font-heading text-primary-950">Upcoming Events</h2>
-                    <a href="#" class="text-primary-600 font-medium hover:text-primary-800 flex items-center group text-sm md:text-base">
+                    <a href="#"
+                        class="text-primary-600 font-medium hover:text-primary-800 flex items-center group text-sm md:text-base">
                         View All <span class="group-hover:translate-x-1 transition-transform ml-1">&rarr;</span>
                     </a>
                 </div>
@@ -338,7 +339,8 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             <div
                 class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 md:p-8 border border-white/10 hover:bg-white/15 transition-all">
-                <p class="text-base md:text-lg italic text-slate-300 mb-4 md:mb-6">"Moonstar has exceeded our expectations. The teachers are
+                <p class="text-base md:text-lg italic text-slate-300 mb-4 md:mb-6">"Moonstar has exceeded our
+                    expectations. The teachers are
                     dedicated, and my child has flourished both academically and personally."</p>
                 <div class="flex items-center gap-4">
                     <div
@@ -352,7 +354,8 @@
             </div>
             <div
                 class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 md:p-8 border border-white/10 hover:bg-white/15 transition-all">
-                <p class="text-base md:text-lg italic text-slate-300 mb-4 md:mb-6">"The facilities are world-class and the emphasis on
+                <p class="text-base md:text-lg italic text-slate-300 mb-4 md:mb-6">"The facilities are world-class and
+                    the emphasis on
                     character development alongside academics makes Moonstar stand out."</p>
                 <div class="flex items-center gap-4">
                     <div
@@ -366,7 +369,8 @@
             </div>
             <div
                 class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 md:p-8 border border-white/10 hover:bg-white/15 transition-all">
-                <p class="text-base md:text-lg italic text-slate-300 mb-4 md:mb-6">"We're grateful for the nurturing environment and
+                <p class="text-base md:text-lg italic text-slate-300 mb-4 md:mb-6">"We're grateful for the nurturing
+                    environment and
                     individual attention our daughter receives. Highly recommended!"</p>
                 <div class="flex items-center gap-4">
                     <div
@@ -383,10 +387,12 @@
 </section>
 
 <!-- Call to Action -->
-<section class="py-12 md:py-20 bg-gradient-to-br from-accent-400 to-accent-500 text-primary-950 relative overflow-hidden">
+<section
+    class="py-12 md:py-20 bg-gradient-to-br from-accent-400 to-accent-500 text-primary-950 relative overflow-hidden">
     <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
         <h2 class="text-2xl md:text-5xl font-bold font-heading mb-4 md:mb-6">Ready to Join Our Community?</h2>
-        <p class="text-base md:text-xl font-medium mb-6 md:mb-10 opacity-90">Admissions for the upcoming academic year are now open. Secure
+        <p class="text-base md:text-xl font-medium mb-6 md:mb-10 opacity-90">Admissions for the upcoming academic year
+            are now open. Secure
             your child's future today.</p>
         <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
             <a href="<?= base_url('admissions') ?>"

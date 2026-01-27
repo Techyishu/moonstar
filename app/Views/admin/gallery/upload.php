@@ -154,7 +154,13 @@
                     </svg>
                     <div>
                         <h4 class="text-sm font-medium text-blue-800">Bulk Upload Mode</h4>
-                        <p class="text-sm text-blue-700 mt-1">Quickly upload multiple images at once. All images go to "General" category without titles. You can edit individual images later.</p>
+                        <p class="text-sm text-blue-700 mt-1">Quickly upload multiple images at once. All images go to
+                            "General" category without titles. You can edit individual images later.</p>
+                        <div class="mt-2 text-xs text-blue-600 font-mono bg-blue-100/50 p-2 rounded">
+                            Server Limits:
+                            Max File Size: <strong><?= ini_get('upload_max_filesize') ?></strong> |
+                            Max Post Size: <strong><?= ini_get('post_max_size') ?></strong>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -269,6 +275,19 @@
             selectedDiv.classList.add('hidden');
         }
     });
+
+    // Console logs for debugging
+    <?php if (session()->has('api_errors')): ?>
+        console.group('Bulk Upload Errors');
+        <?php foreach (session('api_errors') as $error): ?>
+            console.error('<?= esc($error) ?>');
+        <?php endforeach; ?>
+        console.groupEnd();
+    <?php endif; ?>
+
+    <?php if (session()->has('error')): ?>
+        console.error('Upload Error:', '<?= esc(session('error')) ?>');
+    <?php endif; ?>
 </script>
 
 <?= $this->endSection() ?>

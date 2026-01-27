@@ -93,56 +93,84 @@ class AdminGallery extends BaseController
      */
     public function bulkStore()
     {
+        // Check if POST data is empty (likely due to post_max_size limit)
+        if (empty($this->request->getPost()) && empty($this->request->getFiles())) {
+            $postMaxSize = ini_get('post_max_size');
+            log_message('error', "Bulk upload failed: POST data empty. Likely exceeded post_max_size ({$postMaxSize}).");
+            return redirect()->back()->with('error', "Upload failed. The total size likely exceeds the server limit of {$postMaxSize}.");
+        }
+
         $files = $this->request->getFiles();
 
         if (empty($files['images'])) {
+            log_message('error', 'Bulk upload failed: No images found in request.');
             return redirect()->back()->with('error', 'No images selected.');
         }
 
         $uploadedCount = 0;
         $failedCount = 0;
+        $errors = [];
 
         foreach ($files['images'] as $file) {
             if ($file->isValid() && !$file->hasMoved()) {
-                // Validate file
+                // Validate file size manually as well
                 if ($file->getSize() > 5120 * 1024) { // 5MB
+                    $errors[] = "File {$file->getClientName()} exceeds 5MB limit.";
+                    log_message('error', "Upload failed for {$file->getClientName()}: Size exceeds 5MB.");
                     $failedCount++;
                     continue;
                 }
 
                 $mimeType = $file->getMimeType();
                 if (!in_array($mimeType, ['image/jpeg', 'image/png', 'image/gif', 'image/webp'])) {
+                    $errors[] = "File {$file->getClientName()} has invalid type: {$mimeType}.";
+                    log_message('error', "Upload failed for {$file->getClientName()}: Invalid mime type {$mimeType}.");
                     $failedCount++;
                     continue;
                 }
 
                 $newName = $file->getRandomName();
 
-                // Move to temp location first
-                $file->move(FCPATH . 'uploads/gallery/temp', $newName);
+                try {
+                    // Move to temp location first
+                    $file->move(FCPATH . 'uploads/gallery/temp', $newName);
 
-                // Resize image to max 1600px
-                $this->resizeImage(FCPATH . 'uploads/gallery/temp/' . $newName, FCPATH . 'uploads/gallery/' . $newName);
+                    // Resize image to max 1600px
+                    $this->resizeImage(FCPATH . 'uploads/gallery/temp/' . $newName, FCPATH . 'uploads/gallery/' . $newName);
 
-                // Delete temp file
-                @unlink(FCPATH . 'uploads/gallery/temp/' . $newName);
+                    // Delete temp file
+                    @unlink(FCPATH . 'uploads/gallery/temp/' . $newName);
 
-                $data = [
-                    'title' => '',
-                    'description' => '',
-                    'image_path' => $newName,
-                    'category' => 'general',
-                    'display_order' => 0,
-                    'status' => 1,
-                ];
+                    $data = [
+                        'title' => '',
+                        'description' => '',
+                        'image_path' => $newName,
+                        'category' => 'general',
+                        'display_order' => 0,
+                        'status' => 1,
+                    ];
 
-                if ($this->galleryModel->insert($data)) {
-                    $this->auditLog->logActivity('Bulk uploaded gallery image', 'gallery', $this->galleryModel->getInsertID(), null, $data);
-                    $uploadedCount++;
-                } else {
+                    if ($this->galleryModel->insert($data)) {
+                        $this->auditLog->logActivity('Bulk uploaded gallery image', 'gallery', $this->galleryModel->getInsertID(), null, $data);
+                        $uploadedCount++;
+                    } else {
+                        log_message('error', "Database insert failed for {$file->getClientName()}.");
+                        $errors[] = "Database error for {$file->getClientName()}.";
+                        $failedCount++;
+                    }
+                } catch (\Exception $e) {
+                    log_message('error', "Exception during upload/resize for {$file->getClientName()}: " . $e->getMessage());
+                    $errors[] = "Error processing {$file->getClientName()}: " . $e->getMessage();
                     $failedCount++;
+                    // Clean up if file was moved but processing failed
+                    if (file_exists(FCPATH . 'uploads/gallery/temp/' . $newName)) {
+                        @unlink(FCPATH . 'uploads/gallery/temp/' . $newName);
+                    }
                 }
             } else {
+                $errorMsg = $file->getErrorString() . '(' . $file->getError() . ')';
+                log_message('error', "Upload failed for {$file->getClientName()}: {$errorMsg}");
+                $errors[] = "Failed to upload {$file->getClientName()}: {$errorMsg}";
                 $failedCount++;
             }
         }
@@ -150,12 +178,13 @@ class AdminGallery extends BaseController
         if ($uploadedCount > 0) {
             $message = "{$uploadedCount} image(s) uploaded successfully.";
             if ($failedCount > 0) {
-                $message .= " {$failedCount} image(s) failed.";
+                $message .= " {$failedCount} image(s) failed. Check details in browser console.";
+                return redirect()->to('/admin/gallery')->with('success', $message)->with('api_errors', $errors);
             }
             return redirect()->to('/admin/gallery')->with('success', $message);
         }
 
-        return redirect()->back()->with('error', 'Failed to upload images.');
+        return redirect()->back()->with('error', 'Failed to upload images. Check browser console for details.')->with('api_errors', $errors);
     }
 
     public function edit($id)

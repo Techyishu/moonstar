@@ -51,10 +51,10 @@
                 </svg>
             </div>
             <h3 class="text-lg md:text-xl font-bold text-slate-900 mb-2">Call Us</h3>
-            <p class="text-slate-500 mb-1"><span class="font-semibold text-slate-700">Phone:</span> +91-7404-266-266
+            <p class="text-slate-500 mb-1"><span class="font-semibold text-slate-700">Phone:</span> +91-7404-266-266</p>
+            <p class="text-slate-500 mb-1"><span class="font-semibold text-slate-700">Mobile:</span> +91-740-411-6673
             </p>
-            <p class="text-slate-500"><span class="font-semibold text-slate-700">Mobile:</span> +91-740-411-6673
-            </p>
+            <p class="text-slate-500"><span class="font-semibold text-slate-700">Mobile:</span> +91-98960-92826</p>
         </div>
 
         <!-- Email -->

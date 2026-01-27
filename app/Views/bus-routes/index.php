@@ -37,13 +37,7 @@
                     <p class="text-slate-600 leading-relaxed mb-4">Moonstar School provides safe and reliable transport
                         services covering major areas of the city. All our buses are equipped with:</p>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-                        <div class="flex items-center space-x-2">
-                            <svg class="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            <span class="text-sm font-medium text-slate-700">GPS Tracking</span>
-                        </div>
+
                         <div class="flex items-center space-x-2">
                             <svg class="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -183,38 +177,15 @@
                         <p class="text-sm text-slate-600 mb-3">Contact our transport coordinator for route inquiries and
                             new registrations.</p>
                         <div class="space-y-2 text-sm">
-                            <p class="font-medium text-slate-900">📞 Transport Office: +91 123 456 7890</p>
+                            <p class="font-medium text-slate-900">📞 Transport Office: +91-7404-266-266,
+                                +91-7404-116-673</p>
                             <p class="font-medium text-slate-900">📧 Email: moonstar.gharounda@gmail.com</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- GPS Tracking -->
-            <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 border border-green-100">
-                <div class="flex items-start space-x-3">
-                    <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                    <div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2">Live GPS Tracking</h3>
-                        <p class="text-sm text-slate-600 mb-3">Track your child's bus in real-time using our mobile app.
-                        </p>
-                        <a href="#"
-                            class="inline-flex items-center px-4 py-2 bg-green-600 text-white text-sm font-semibold rounded-lg hover:bg-green-700 transition-colors">
-                            Download App
-                            <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
+
 
         </div>
 
