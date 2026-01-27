@@ -58,7 +58,7 @@
                     x-transition:enter-start="opacity-0 translate-y-8"
                     x-transition:enter-end="opacity-100 translate-y-0">
                     <span
-                        class="inline-block py-1 px-3 rounded-full bg-accent-500/20 border border-accent-500/50 backdrop-blur-md text-accent-300 text-xs md:text-sm font-bold mb-4 md:mb-6 uppercase tracking-wider">
+                        class="inline-block py-1 px-3 rounded-full bg-white border border-white backdrop-blur-md text-primary-950 text-xs md:text-sm font-bold mb-4 md:mb-6 uppercase tracking-wider shadow-lg">
                         Admissions Open 2025-26
                     </span>
                     <h1 class="text-3xl md:text-6xl lg:text-7xl font-bold font-heading text-white tracking-tight mb-4 md:mb-6 leading-tight drop-shadow-lg"
