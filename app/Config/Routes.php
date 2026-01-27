@@ -109,6 +109,7 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     $routes->get('gallery', 'Admin\AdminGallery::index');
     $routes->get('gallery/upload', 'Admin\AdminGallery::upload');
     $routes->post('gallery/store', 'Admin\AdminGallery::store');
+    $routes->post('gallery/bulk-store', 'Admin\AdminGallery::bulkStore');
     $routes->get('gallery/edit/(:num)', 'Admin\AdminGallery::edit/$1');
     $routes->post('gallery/update/(:num)', 'Admin\AdminGallery::update/$1');
     $routes->get('gallery/delete/(:num)', 'Admin\AdminGallery::delete/$1');

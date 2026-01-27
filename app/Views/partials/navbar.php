@@ -15,17 +15,15 @@ $current_uri = uri_string();
 
             <!-- Logo -->
             <div class="flex-shrink-0 flex items-center">
-                <a href="<?= base_url('/') ?>" class="flex items-center gap-2 group">
-                    <div
-                        class="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:bg-primary-700 transition-colors">
-                        <span class="font-heading font-bold text-xl">M</span>
-                    </div>
-                    <div>
+                <a href="<?= base_url('/') ?>" class="flex items-center gap-2 md:gap-3 group">
+                    <img src="<?= base_url('uploads/logo.jpg') ?>" alt="Moon Star Public School"
+                        class="w-10 h-10 md:w-12 md:h-12 rounded-lg object-contain shadow-lg bg-white p-0.5">
+                    <div class="hidden sm:block">
                         <span
-                            class="block text-xl font-heading font-bold text-slate-900 leading-none group-hover:text-primary-600 transition-colors"
+                            class="block text-lg md:text-xl font-heading font-bold text-slate-900 leading-tight group-hover:text-primary-600 transition-colors"
                             :class="{ 'text-slate-900': scrolled, 'text-white': !scrolled && !mobileMenuOpen }">Moon
                             Star</span>
-                        <span class="block text-xs font-medium text-slate-500 uppercase tracking-widest"
+                        <span class="block text-[10px] md:text-xs font-medium text-slate-500 uppercase tracking-wider"
                             :class="{ 'text-slate-500': scrolled, 'text-primary-200': !scrolled && !mobileMenuOpen }">Public
                             School</span>
                     </div>

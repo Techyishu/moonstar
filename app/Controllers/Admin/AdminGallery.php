@@ -88,6 +88,76 @@ class AdminGallery extends BaseController
         return redirect()->back()->withInput()->with('error', 'Failed to upload image.');
     }
 
+    /**
+     * Store multiple images in bulk without title/description
+     */
+    public function bulkStore()
+    {
+        $files = $this->request->getFiles();
+
+        if (empty($files['images'])) {
+            return redirect()->back()->with('error', 'No images selected.');
+        }
+
+        $uploadedCount = 0;
+        $failedCount = 0;
+
+        foreach ($files['images'] as $file) {
+            if ($file->isValid() && !$file->hasMoved()) {
+                // Validate file
+                if ($file->getSize() > 5120 * 1024) { // 5MB
+                    $failedCount++;
+                    continue;
+                }
+
+                $mimeType = $file->getMimeType();
+                if (!in_array($mimeType, ['image/jpeg', 'image/png', 'image/gif', 'image/webp'])) {
+                    $failedCount++;
+                    continue;
+                }
+
+                $newName = $file->getRandomName();
+
+                // Move to temp location first
+                $file->move(FCPATH . 'uploads/gallery/temp', $newName);
+
+                // Resize image to max 1600px
+                $this->resizeImage(FCPATH . 'uploads/gallery/temp/' . $newName, FCPATH . 'uploads/gallery/' . $newName);
+
+                // Delete temp file
+                @unlink(FCPATH . 'uploads/gallery/temp/' . $newName);
+
+                $data = [
+                    'title' => '',
+                    'description' => '',
+                    'image_path' => $newName,
+                    'category' => 'general',
+                    'display_order' => 0,
+                    'status' => 1,
+                ];
+
+                if ($this->galleryModel->insert($data)) {
+                    $this->auditLog->logActivity('Bulk uploaded gallery image', 'gallery', $this->galleryModel->getInsertID(), null, $data);
+                    $uploadedCount++;
+                } else {
+                    $failedCount++;
+                }
+            } else {
+                $failedCount++;
+            }
+        }
+
+        if ($uploadedCount > 0) {
+            $message = "{$uploadedCount} image(s) uploaded successfully.";
+            if ($failedCount > 0) {
+                $message .= " {$failedCount} image(s) failed.";
+            }
+            return redirect()->to('/admin/gallery')->with('success', $message);
+        }
+
+        return redirect()->back()->with('error', 'Failed to upload images.');
+    }
+
     public function edit($id)
     {
         $image = $this->galleryModel->find($id);

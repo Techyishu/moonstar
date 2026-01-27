@@ -49,7 +49,9 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="absolute bottom-0 left-0 w-full p-6 text-white translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                             <p class="text-xs font-bold text-accent-400 uppercase tracking-wider mb-1"><?= esc($item['category']) ?></p>
+                            <?php if (!empty($item['title'])): ?>
                             <h3 class="text-lg font-bold truncate"><?= esc($item['title']) ?></h3>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -93,7 +95,7 @@
 
         <div class="max-w-7xl max-h-[90vh] p-4 flex flex-col items-center">
             <img :src="currentImage" class="max-w-full max-h-[85vh] rounded shadow-2xl" alt="Gallery">
-            <p x-text="currentTitle" class="text-white mt-4 text-lg font-medium"></p>
+            <p x-show="currentTitle" x-text="currentTitle" class="text-white mt-4 text-lg font-medium"></p>
         </div>
     </div>
 </section>
