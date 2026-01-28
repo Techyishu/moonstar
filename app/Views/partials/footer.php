@@ -9,16 +9,8 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 md:gap-12">
             <!-- Brand Column -->
             <div class="lg:col-span-4 space-y-6">
-                <a href="<?= base_url() ?>" class="flex items-center gap-2">
-                    <div
-                        class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-white backdrop-blur-sm border border-white/10">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent-400" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                        </svg>
-                    </div>
-                    <span class="text-xl font-bold font-heading text-white">Moon Star Public School</span>
+                <a href="<?= base_url() ?>" class="flex items-center">
+                    <img src="<?= base_url('uploads/logo.jpg') ?>" alt="Moon Star Public School Logo" class="h-16 w-auto">
                 </a>
                 <p class="text-slate-400 leading-relaxed text-sm">
                     Moon Star Public School is dedicated to providing excellence in education.

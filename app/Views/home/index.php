@@ -142,53 +142,45 @@
                 every child is encouraged to discover their unique potential.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Card 1 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            <!-- Computer Lab -->
             <div
                 class="group bg-white rounded-2xl p-5 md:p-8 shadow-soft hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100">
-                <div
-                    class="w-14 h-14 bg-primary-100 rounded-xl flex items-center justify-center text-primary-600 mb-6 group-hover:bg-primary-600 group-hover:text-white transition-colors">
-                    <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
-                        </path>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-3 font-heading">Academic Excellence</h3>
-                <p class="text-slate-600 leading-relaxed">Rigorous curriculum designed to challenge students while
-                    supporting their individual learning styles and needs.</p>
+                <div class="text-4xl mb-4">💻</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3 font-heading">Computer Lab</h3>
+                <p class="text-slate-600 leading-relaxed text-sm md:text-base">The Computer Lab is well-equipped with modern computers and updated software to help students develop essential digital skills. It provides hands-on learning in computer fundamentals, coding, internet usage, and educational applications, preparing students for a technology-driven world.</p>
             </div>
 
-            <!-- Card 2 -->
+            <!-- Physics Lab -->
             <div
                 class="group bg-white rounded-2xl p-5 md:p-8 shadow-soft hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100">
-                <div
-                    class="w-14 h-14 bg-accent-100 rounded-xl flex items-center justify-center text-accent-600 mb-6 group-hover:bg-accent-500 group-hover:text-white transition-colors">
-                    <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
-                        </path>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-3 font-heading">Modern Innovation</h3>
-                <p class="text-slate-600 leading-relaxed">State-of-the-art STEM labs and robotics programs that prepare
-                    students for the technology of tomorrow.</p>
+                <div class="text-4xl mb-4">🔬</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3 font-heading">Physics Lab</h3>
+                <p class="text-slate-600 leading-relaxed text-sm md:text-base">The Physics Lab allows students to explore and understand the laws of nature through practical experiments. It is equipped with standard apparatus for mechanics, optics, electricity, and magnetism, helping students strengthen concepts learned in the classroom through observation and experimentation.</p>
             </div>
 
-            <!-- Card 3 -->
+            <!-- Chemistry Lab -->
             <div
                 class="group bg-white rounded-2xl p-5 md:p-8 shadow-soft hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100">
-                <div
-                    class="w-14 h-14 bg-secondary-100 rounded-xl flex items-center justify-center text-secondary-600 mb-6 group-hover:bg-secondary-500 group-hover:text-white transition-colors">
-                    <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
-                        </path>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-3 font-heading">Holistic Growth</h3>
-                <p class="text-slate-600 leading-relaxed">Focus on emotional intelligence, arts, and sports to nurture
-                    well-rounded individuals with strong character.</p>
+                <div class="text-4xl mb-4">🧪</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3 font-heading">Chemistry Lab</h3>
+                <p class="text-slate-600 leading-relaxed text-sm md:text-base">The Chemistry Lab is a safe and well-ventilated space designed for conducting chemical experiments. It contains all necessary equipment, chemicals, and safety measures to help students learn about chemical reactions, compounds, and laboratory techniques under proper supervision.</p>
+            </div>
+
+            <!-- Biology Lab -->
+            <div
+                class="group bg-white rounded-2xl p-5 md:p-8 shadow-soft hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100">
+                <div class="text-4xl mb-4">🌱</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3 font-heading">Biology Lab</h3>
+                <p class="text-slate-600 leading-relaxed text-sm md:text-base">The Biology Lab provides students with opportunities to study living organisms through experiments, models, charts, and microscopes. It supports practical learning in botany, zoology, and human biology, encouraging curiosity and scientific thinking.</p>
+            </div>
+
+            <!-- Maths Lab -->
+            <div
+                class="group bg-white rounded-2xl p-5 md:p-8 shadow-soft hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100">
+                <div class="text-4xl mb-4">➗</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3 font-heading">Maths Lab</h3>
+                <p class="text-slate-600 leading-relaxed text-sm md:text-base">The Maths Lab makes learning mathematics fun and interactive through models, puzzles, charts, and activities. It helps students understand mathematical concepts practically, develop logical reasoning, and enhance problem-solving skills.</p>
             </div>
         </div>
     </div>
@@ -347,8 +339,8 @@
                         class="w-12 h-12 rounded-full bg-gradient-to-br from-accent-400 to-accent-600 flex items-center justify-center text-primary-950 font-bold text-xl">
                         S</div>
                     <div>
-                        <h4 class="font-bold text-white">Sarah Johnson</h4>
-                        <p class="text-sm text-slate-400">Mother of Grade 5 Student</p>
+                        <h4 class="font-bold text-white">Mr. Surender</h4>
+                        <p class="text-sm text-slate-400">Father of Grade 6 and Grade 1 student</p>
                     </div>
                 </div>
             </div>
@@ -360,10 +352,10 @@
                 <div class="flex items-center gap-4">
                     <div
                         class="w-12 h-12 rounded-full bg-gradient-to-br from-secondary-400 to-secondary-600 flex items-center justify-center text-white font-bold text-xl">
-                        M</div>
+                        V</div>
                     <div>
-                        <h4 class="font-bold text-white">Michael Chen</h4>
-                        <p class="text-sm text-slate-400">Father of Grade 8 Student</p>
+                        <h4 class="font-bold text-white">Mr. Vijay Sharma</h4>
+                        <p class="text-sm text-slate-400">Father of Grade 6 student</p>
                     </div>
                 </div>
             </div>
@@ -375,10 +367,10 @@
                 <div class="flex items-center gap-4">
                     <div
                         class="w-12 h-12 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center text-white font-bold text-xl">
-                        E</div>
+                        R</div>
                     <div>
-                        <h4 class="font-bold text-white">Emily Rodriguez</h4>
-                        <p class="text-sm text-slate-400">Mother of Grade 3 Student</p>
+                        <h4 class="font-bold text-white">Mrs. Ruchi Singla</h4>
+                        <p class="text-sm text-slate-400">Mother of Grade 3 student</p>
                     </div>
                 </div>
             </div>

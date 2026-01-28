@@ -14,36 +14,39 @@
     </div>
 
     <div class="relative z-10 max-w-4xl mx-auto">
-        <h1 class="text-3xl md:text-6xl font-bold font-heading text-white mb-4 md:mb-6 animate-fade-in-up">About
-            Moonstar</h1>
+        <h1 class="text-3xl md:text-6xl font-bold font-heading text-white mb-4 md:mb-6 animate-fade-in-up">Welcome To Moon Star Public School</h1>
         <p class="text-base md:text-xl text-primary-200 leading-relaxed font-light">
-            Founded with a vision to illuminate young minds, Moonstar School has been a pioneer in holistic education
-            for over two decades.
+            A world class educational group committed to holistic school education that engenders excellence in every sphere of human endeavor.
         </p>
     </div>
 </section>
 
-<!-- Values Section (Mission/Vision) -->
-<section class="py-12 md:py-24 bg-white relative -mt-10 md:-mt-16 z-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-            <!-- Mission -->
-            <div
-                class="bg-white rounded-2xl shadow-xl p-6 md:p-10 border-t-4 border-accent-400 transform hover:-translate-y-2 transition-all duration-300">
-                <div
-                    class="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-accent-50 text-accent-600 flex items-center justify-center mb-4 md:mb-6">
-                    <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                </div>
-                <h2 class="text-xl md:text-2xl font-bold font-heading text-primary-950 mb-3 md:mb-4">Our Mission</h2>
-                <p class="text-slate-600 leading-relaxed text-base md:text-lg">
-                    To empower every student with knowledge, character, and creativity. We strive to foster an inclusive
-                    environment where curiosity is celebrated and excellence is a habit.
+<!-- Welcome Section -->
+<section class="py-12 md:py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center space-y-6">
+            <p class="text-slate-700 text-base md:text-lg leading-relaxed">
+                Our Vision is to enable all students, without exception, to develop their talents to the full, and realize creative potential, including responsibilities of life and achievement of personal aims.
+            </p>
+            <p class="text-slate-700 text-base md:text-lg leading-relaxed">
+                The process evolves to instill values of Indian tradition in three simple yet meaningful words: <strong class="text-primary-700">"Satyam - Shivam - Sundaram"</strong> (Truth - Love - Beauty). The Motto of the school has been derived from ancient treasure of Vedas, which means <em>"Lead Me from Darkness to Light"</em>.
+            </p>
+            <div class="py-6 px-8 bg-gradient-to-r from-accent-50 to-primary-50 rounded-2xl border border-accent-200">
+                <p class="text-xl md:text-2xl font-heading font-bold text-primary-900 mb-2">
+                    ॥ "आप हमें अबोध बालक दीजिए" "हम आपको सुबोध नागरिक देंगे" ॥
+                </p>
+                <p class="text-slate-600 italic">
+                    You give us an innocent child, We will give you an intelligent citizen.
                 </p>
             </div>
+        </div>
+    </div>
+</section>
 
+<!-- Values Section (Mission/Vision) -->
+<section class="py-12 md:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             <!-- Vision -->
             <div
                 class="bg-white rounded-2xl shadow-xl p-6 md:p-10 border-t-4 border-primary-500 transform hover:-translate-y-2 transition-all duration-300">
@@ -58,15 +61,188 @@
                 </div>
                 <h2 class="text-xl md:text-2xl font-bold font-heading text-primary-950 mb-3 md:mb-4">Our Vision</h2>
                 <p class="text-slate-600 leading-relaxed text-base md:text-lg">
-                    To be a global leader in education, nurturing compassionate and innovative citizens who are prepared
-                    to shape the future of our world with integrity and wisdom.
+                    To create a future-ready generation by integrating academic excellence with skill-based education, nurturing confident, innovative, and responsible learners who contribute meaningfully to a self-reliant and progressive India.
+                </p>
+            </div>
+
+            <!-- Mission -->
+            <div
+                class="bg-white rounded-2xl shadow-xl p-6 md:p-10 border-t-4 border-accent-400 transform hover:-translate-y-2 transition-all duration-300">
+                <div
+                    class="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-accent-50 text-accent-600 flex items-center justify-center mb-4 md:mb-6">
+                    <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <h2 class="text-xl md:text-2xl font-bold font-heading text-primary-950 mb-3 md:mb-4">Our Mission</h2>
+                <p class="text-slate-600 leading-relaxed text-base md:text-lg">
+                    Our mission is to educate and empower young minds through holistic, skill-based, and value-oriented education, fostering critical thinking, creativity, and lifelong learning to build a knowledgeable, ethical, and progressive India.
                 </p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Values Grid (Replaces Timeline) -->
+<!-- Chairman's Message -->
+<section class="py-8 md:py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-6 md:mb-8">
+            <span class="text-accent-500 font-bold tracking-wider uppercase text-xs md:text-sm">Leadership Messages</span>
+            <h2 class="text-xl md:text-3xl font-bold font-heading text-primary-950 mt-2">Chairman's Message</h2>
+            <p class="text-base text-slate-600 mt-1">Mr. Sompal Rana</p>
+        </div>
+        <div class="bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl p-4 md:p-8 shadow-lg">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8">
+                <div class="md:col-span-1">
+                    <div class="relative overflow-hidden rounded-xl aspect-square">
+                        <img src="<?= base_url('uploads/chairman/WhatsApp Image 2025-12-19 at 18.42.31-2.jpeg') ?>"
+                            alt="Mr. Sompal Rana - Chairman"
+                            class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary-900/20 to-transparent"></div>
+                    </div>
+                </div>
+                <div class="md:col-span-3 space-y-3">
+                    <div class="bg-white/80 rounded-lg p-3 md:p-4 border border-slate-200">
+                        <p class="text-sm md:text-base leading-relaxed text-slate-700">
+                            We stand on the threshold of a new beginning, having covered a quarter of a century in the endeavor to create independent thinking, creative and sensitive individuals.
+                        </p>
+                    </div>
+                    <div class="bg-white/80 rounded-lg p-3 md:p-4 border border-slate-200">
+                        <p class="text-sm md:text-base leading-relaxed text-slate-700">
+                            Every child is unique, every child is important. We are committed to provide a progressive education system that steers the holistic education of a child.
+                        </p>
+                    </div>
+                    <div class="bg-white/80 rounded-lg p-3 md:p-4 border border-slate-200">
+                        <p class="text-sm md:text-base leading-relaxed text-slate-700">
+                            We aim to develop a future generation that takes pride in our heritage and culture, with a yearning for global competitive excellence.
+                        </p>
+                    </div>
+                    <div class="bg-primary-100/50 rounded-lg p-3 md:p-4 border border-primary-200">
+                        <p class="text-sm md:text-base font-medium text-primary-800 italic">
+                            "Our greatest glory is not in never falling, but rising every time we fall"
+                        </p>
+                    </div>
+                    <div class="bg-accent-100/50 rounded-lg p-3 md:p-4 border border-accent-200">
+                        <p class="text-sm md:text-base italic text-accent-700">
+                            "Love was not put in your heart to stay. Love isn't love until you give it away."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Principal's Message -->
+<section class="py-8 md:py-16 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-6 md:mb-8">
+            <h2 class="text-xl md:text-3xl font-bold font-heading text-primary-950">Principal's Message</h2>
+            <p class="text-base text-slate-600 mt-1">Dr. Rinkyla</p>
+        </div>
+        <div class="bg-white rounded-2xl p-4 md:p-8 shadow-lg border border-slate-100">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8">
+                <div class="md:col-span-1">
+                    <div class="relative overflow-hidden rounded-xl aspect-square">
+                        <img src="<?= base_url('uploads/principals/IMG_5656.JPG') ?>"
+                            alt="Dr. Rinkyla - Principal"
+                            class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary-900/20 to-transparent"></div>
+                    </div>
+                </div>
+                <div class="md:col-span-3 space-y-3">
+                    <div class="bg-slate-50 rounded-lg p-3 md:p-4 border border-slate-200">
+                        <p class="text-sm md:text-base leading-relaxed text-slate-700">
+                            If there is anything more powerful in this universe than faith and hope, it's love. Love is patient and kind. It gives hope and courage. Love heals and endures.
+                        </p>
+                    </div>
+                    <div class="bg-slate-50 rounded-lg p-3 md:p-4 border border-slate-200">
+                        <p class="text-sm md:text-base leading-relaxed text-slate-700">
+                            Trees give fruit, rivers water, sun warmth, flowers resplendency – nature gives selflessly. From these truths we learn our life's lesson – love and give.
+                        </p>
+                    </div>
+                    <div class="bg-slate-50 rounded-lg p-3 md:p-4 border border-slate-200">
+                        <p class="text-sm md:text-base leading-relaxed text-slate-700">
+                            It is our endeavor to instill in our children compassion, empathy, tenderness and humaneness, so they can forge a path of roses for themselves and humankind.
+                        </p>
+                    </div>
+                    <div class="bg-slate-50 rounded-lg p-3 md:p-4 border border-slate-200">
+                        <p class="text-sm md:text-base leading-relaxed text-slate-700">
+                            I believe in quality education, which will create sensitive caring citizens who will give something back to the society.
+                        </p>
+                    </div>
+                    <div class="bg-primary-100/50 rounded-lg p-3 md:p-4 border border-primary-200">
+                        <p class="text-sm md:text-base italic text-primary-700 font-medium">
+                            "May God be our guiding light and bless our institution."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Director's Message -->
+<section class="py-8 md:py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-6 md:mb-8">
+            <h2 class="text-xl md:text-3xl font-bold font-heading text-primary-950">Director's Message</h2>
+            <p class="text-base text-slate-600 mt-1">Mr. Dinesh Kaushik</p>
+        </div>
+        <div class="bg-gradient-to-br from-accent-50 to-primary-50 rounded-2xl p-4 md:p-8 shadow-lg">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8">
+                <div class="md:col-span-1">
+                    <div class="relative overflow-hidden rounded-xl aspect-square">
+                        <img src="<?= base_url('uploads/directors/WhatsApp Image 2026-01-28 at 12.45.02.jpeg') ?>"
+                            alt="Mr. Dinesh Kaushik - Director"
+                            class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary-900/20 to-transparent"></div>
+                    </div>
+                </div>
+                <div class="md:col-span-3 space-y-3">
+                    <div class="bg-white/80 rounded-lg p-3 md:p-4 border border-slate-200">
+                        <p class="text-sm md:text-base leading-relaxed text-slate-700">
+                            Students and Visitors, I'm very delighted that you have taken the time to visit the Moon Star Public School website. Our hope is that you find our website to be user-friendly.
+                        </p>
+                    </div>
+                    <div class="bg-primary-100/50 rounded-lg p-3 md:p-4 border border-primary-200">
+                        <p class="text-sm md:text-base font-medium text-primary-800">
+                            "Education is the most powerful weapon which you can use to change the world." - Nelson Mandela
+                        </p>
+                    </div>
+                    <div class="bg-white/80 rounded-lg p-3 md:p-4 border border-slate-200">
+                        <p class="text-sm md:text-base leading-relaxed text-slate-700">
+                            We believe that Moon Star School offers an educational experience like no other to our children and will give them the qualifications and confidence they will need to play a leading role in tomorrow's society.
+                        </p>
+                    </div>
+                    <div class="bg-white/80 rounded-lg p-3 md:p-4 border border-slate-200">
+                        <p class="text-sm md:text-base leading-relaxed text-slate-700">
+                            The Health, Hygiene and Safety of our children and teachers is paramount. All our endeavors will fail if we, the School and the parents, are unable to forge a bond of trust.
+                        </p>
+                    </div>
+                    <div class="bg-white/80 rounded-lg p-3 md:p-4 border border-slate-200">
+                        <p class="text-sm md:text-base leading-relaxed text-slate-700">
+                            We are committed to the philosophy that each member of the school community must have the opportunity for reaching his potential.
+                        </p>
+                    </div>
+                    <div class="bg-accent-100/50 rounded-lg p-3 md:p-4 border border-accent-200">
+                        <p class="text-sm md:text-base font-medium text-accent-800">
+                            "An opportunity is a gift by us to the students, what they can make of it, is their gift to us and to the society at large."
+                        </p>
+                    </div>
+                    <div class="bg-white/80 rounded-lg p-3 md:p-4 border border-slate-200">
+                        <p class="text-sm md:text-base italic text-accent-700">
+                            "We welcome you here, to a world of learning in enjoyable ways, to a world where every child is challenged to grow to his or her potential."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Values Grid (Core Values) -->
 <section class="py-12 md:py-24 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-10 md:mb-16">
@@ -133,94 +309,6 @@
                 <h3 class="text-xl font-bold text-slate-900 mb-2">Community</h3>
                 <p class="text-slate-600">We work together to build a supportive and inclusive family of learners.</p>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- Leadership Team -->
-<section class="py-12 md:py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-10 md:mb-16">
-            <h2 class="text-2xl md:text-5xl font-bold font-heading text-primary-950">Meet Our Leaders</h2>
-            <p class="mt-3 md:mt-4 text-slate-500 max-w-2xl mx-auto text-sm md:text-base">The dedicated educators
-                guiding our path.</p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
-            <?php if (!empty($leadership)): ?>
-                <?php foreach ($leadership as $leader): ?>
-                    <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[3/4]">
-                        <?php if (!empty($leader['photo'])): ?>
-                            <img src="<?= base_url('uploads/teachers/' . $leader['photo']) ?>"
-                                alt="<?= esc($leader['first_name']) ?>"
-                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                        <?php else: ?>
-                            <div class="absolute inset-0 bg-slate-200 flex items-center justify-center text-slate-400">
-                                <svg class="w-20 h-20" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </div>
-                        <?php endif; ?>
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-primary-950 via-primary-900/50 to-transparent"></div>
-
-                        <div
-                            class="absolute bottom-0 left-0 w-full p-6 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform">
-                            <h3 class="text-xl font-bold font-heading mb-1">
-                                <?= esc($leader['first_name'] . ' ' . $leader['last_name']) ?>
-                            </h3>
-                            <p class="text-accent-400 font-medium mb-2 uppercase tracking-wider text-xs">
-                                <?= esc($leader['subject']) ?>
-                            </p>
-                            <p class="text-sm text-slate-300 opacity-0 group-hover:opacity-100 transition-opacity delay-100">
-                                <?= esc($leader['qualification']) ?>
-                            </p>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
-            <?php else: ?>
-                <!-- Fallback / Static Data for Design -->
-                <div class="group relative overflow-hidden rounded-2xl shadow-lg bg-slate-100 aspect-[3/4]">
-                    <div class="absolute inset-0 bg-slate-200 flex items-center justify-center text-slate-400"><svg
-                            class="w-16 h-16" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                                clip-rule="evenodd" />
-                        </svg></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-primary-950 via-primary-900/40 to-transparent"></div>
-                    <div
-                        class="absolute bottom-0 left-0 w-full p-6 text-white translate-y-2 group-hover:translate-y-0 transition-transform">
-                        <h3 class="text-xl font-bold font-heading mb-1">Dr. Jane Smith</h3>
-                        <p class="text-accent-400 font-medium text-xs uppercase">Principal</p>
-                    </div>
-                </div>
-                <div class="group relative overflow-hidden rounded-2xl shadow-lg bg-slate-100 aspect-[3/4]">
-                    <div class="absolute inset-0 bg-slate-200 flex items-center justify-center text-slate-400"><svg
-                            class="w-16 h-16" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                                clip-rule="evenodd" />
-                        </svg></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-primary-950 via-primary-900/40 to-transparent"></div>
-                    <div
-                        class="absolute bottom-0 left-0 w-full p-6 text-white translate-y-2 group-hover:translate-y-0 transition-transform">
-                        <h3 class="text-xl font-bold font-heading mb-1">Mr. Robert Fox</h3>
-                        <p class="text-accent-400 font-medium text-xs uppercase">Vice Principal</p>
-                    </div>
-                </div>
-                <div class="group relative overflow-hidden rounded-2xl shadow-lg bg-slate-100 aspect-[3/4]">
-                    <div class="absolute inset-0 bg-slate-200 flex items-center justify-center text-slate-400"><svg
-                            class="w-16 h-16" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                                clip-rule="evenodd" />
-                        </svg></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-primary-950 via-primary-900/40 to-transparent"></div>
-                    <div
-                        class="absolute bottom-0 left-0 w-full p-6 text-white translate-y-2 group-hover:translate-y-0 transition-transform">
-                        <h3 class="text-xl font-bold font-heading mb-1">Ms. Sarah Connor</h3>
-                        <p class="text-accent-400 font-medium text-xs uppercase">Academic Coordinator</p>
-                    </div>
-                </div>
-            <?php endif; ?>
         </div>
     </div>
 </section>
