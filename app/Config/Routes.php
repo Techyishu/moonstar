@@ -14,6 +14,7 @@ use CodeIgniter\Router\RouteCollection;
 
 // Public Website Routes
 $routes->get('/', 'PublicHome::index');
+$routes->get('academics', 'Academics::index');
 $routes->get('about', 'About::index');
 $routes->get('toppers', 'Toppers::index');
 $routes->get('staff', 'Staff::index');

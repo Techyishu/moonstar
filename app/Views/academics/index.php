@@ -34,7 +34,139 @@
 </section>
 
 <!-- Programs Grid -->
-<section class="py-12 md:py-20 bg-slate-50" x-data="{ activeModal: null }">
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('programData', () => ({
+            activeModal: null,
+            programDetails: {
+                'primary': {
+                    title: 'Primary School Academics',
+                    content: `<p class='mb-4'>The Primary School academic program focuses on building a strong foundation of knowledge, skills, and values. Our curriculum is designed to nurture curiosity, creativity, and confidence in students while ensuring academic excellence in a supportive environment.</p>
+                    
+                    <h4 class='font-bold text-slate-900 mt-4 mb-2'>Academic Approach</h4>
+                    <ul class='list-disc pl-5 space-y-1 mb-4'>
+                        <li>Child-centered and activity-based learning</li>
+                        <li>Emphasis on conceptual understanding</li>
+                        <li>Integration of NEP guidelines</li>
+                        <li>Encouragement of critical thinking and problem-solving skills</li>
+                        <li>Balance between academics, co-curricular, and life skills</li>
+                    </ul>
+
+                    <h4 class='font-bold text-slate-900 mt-4 mb-2'>Curriculum Structure</h4>
+                    <ul class='list-disc pl-5 space-y-1 mb-4'>
+                        <li><strong>Languages:</strong> English and Hindi – reading, writing, grammar, comprehension, and communication skills.</li>
+                        <li><strong>Mathematics:</strong> Numbers, operations, geometry, measurements, data handling, and logical reasoning.</li>
+                        <li><strong>Environmental Studies (EVS):</strong> Family, community, plants, animals, environment, health, and safety.</li>
+                        <li><strong>Science (Class III onwards):</strong> Basic scientific concepts, observation, and simple experiments.</li>
+                        <li><strong>Social Studies (Class III onwards):</strong> History, geography, and civics to develop awareness of society and culture.</li>
+                        <li><strong>Computer Education:</strong> Basic computer skills, digital literacy, and safe technology use.</li>
+                        <li><strong>Art & Craft / Music / Dance:</strong> Creative expression and cultural appreciation.</li>
+                        <li><strong>Physical Education:</strong> Games, yoga, fitness activities, and sportsmanship.</li>
+                    </ul>
+
+                    <h4 class='font-bold text-slate-900 mt-4 mb-2'>Assessment System</h4>
+                    <ul class='list-disc pl-5 space-y-1 mb-4'>
+                        <li>Continuous and Comprehensive Evaluation (CCE)</li>
+                        <li>Worksheets, projects, class activities, and periodic assessments</li>
+                        <li>Focus on progress, understanding, and improvement</li>
+                    </ul>
+
+                    <h4 class='font-bold text-slate-900 mt-4 mb-2'>Skill Development</h4>
+                    <ul class='list-disc pl-5 space-y-1 mb-4'>
+                        <li>Communication and language skills</li>
+                        <li>Moral values and discipline</li>
+                        <li>Teamwork and leadership</li>
+                        <li>Time management and responsibility</li>
+                    </ul>
+                    <p>Our Primary School program prepares students to become confident learners with strong academic skills and positive values, ready for higher classes.</p>`
+                },
+                'middle': {
+                    title: 'Middle School Academics',
+                    content: `<p class='mb-4'>The Middle School academic program is designed to strengthen conceptual understanding, develop critical thinking, and prepare students for the challenges of secondary education. The curriculum focuses on academic excellence along with personality development and life skills.</p>
+
+                    <h4 class='font-bold text-slate-900 mt-4 mb-2'>Academic Approach</h4>
+                    <ul class='list-disc pl-5 space-y-1 mb-4'>
+                        <li>Concept-based and experiential learning</li>
+                        <li>Alignment with CBSE / NEP 2020 guidelines</li>
+                        <li>Encouragement of analytical thinking and problem-solving</li>
+                        <li>Use of projects, activities, and practical learning</li>
+                        <li>Supportive and student-centric teaching methodology</li>
+                    </ul>
+
+                    <h4 class='font-bold text-slate-900 mt-4 mb-2'>Curriculum Overview</h4>
+                    <ul class='list-disc pl-5 space-y-1 mb-4'>
+                        <li><strong>Languages:</strong> English and Hindi – literature, grammar, writing skills, reading comprehension, and communication.</li>
+                        <li><strong>Mathematics:</strong> Number systems, algebra, geometry, mensuration, data handling, and logical reasoning.</li>
+                        <li><strong>Science:</strong> Physics, Chemistry, and Biology – concepts, experiments, lab activities, and scientific reasoning.</li>
+                        <li><strong>Social Science:</strong> History, Geography, Civics, and Economics – understanding society, culture, and the world.</li>
+                        <li><strong>Computer Science:</strong> Computer fundamentals, basic programming, digital tools, and cyber safety.</li>
+                        <li><strong>General Knowledge & Value Education:</strong> Awareness, ethics, discipline, and moral values.</li>
+                        <li><strong>Art Education:</strong> Drawing, painting, music, dance, and creative activities.</li>
+                        <li><strong>Physical & Health Education:</strong> Sports, yoga, fitness training, and teamwork skills.</li>
+                    </ul>
+
+                    <h4 class='font-bold text-slate-900 mt-4 mb-2'>Assessment Pattern</h4>
+                    <ul class='list-disc pl-5 space-y-1 mb-4'>
+                        <li>Periodic tests and term examinations</li>
+                        <li>Projects, assignments, and practical work</li>
+                        <li>Continuous evaluation of academic and co-scholastic progress</li>
+                    </ul>
+
+                    <h4 class='font-bold text-slate-900 mt-4 mb-2'>Skill Development</h4>
+                    <ul class='list-disc pl-5 space-y-1 mb-4'>
+                        <li>Communication and presentation skills</li>
+                        <li>Critical and creative thinking</li>
+                        <li>Leadership and teamwork</li>
+                        <li>Time management and self-discipline</li>
+                    </ul>
+                    <p>The Middle School program ensures a smooth transition from primary learning to secondary education by building strong academic foundations, confidence, and responsibility in students.</p>`
+                },
+                'high': {
+                    title: 'High School Academics',
+                    content: `<p class='mb-4'>The High School academic program aims to provide strong subject knowledge, develop analytical thinking, and prepare students for board examinations and future academic pursuits. The curriculum is structured to ensure academic excellence along with moral values, discipline, and life skills.</p>
+
+                    <h4 class='font-bold text-slate-900 mt-4 mb-2'>Academic Approach</h4>
+                    <ul class='list-disc pl-5 space-y-1 mb-4'>
+                        <li>Curriculum aligned with CBSE and NEP 2020 guidelines</li>
+                        <li>Focus on concept clarity and application-based learning</li>
+                        <li>Regular assessments and performance monitoring</li>
+                        <li>Integration of practical, project-based, and experiential learning</li>
+                        <li>Individual attention and academic support</li>
+                    </ul>
+
+                    <h4 class='font-bold text-slate-900 mt-4 mb-2'>Curriculum Structure</h4>
+                    <ul class='list-disc pl-5 space-y-1 mb-4'>
+                        <li><strong>Languages:</strong> English and Hindi – literature, grammar, writing skills, comprehension, and communication.</li>
+                        <li><strong>Mathematics:</strong> Algebra, geometry, trigonometry, statistics, and problem-solving skills.</li>
+                        <li><strong>Science:</strong> Physics, Chemistry, and Biology – theory, laboratory work, experiments, and scientific analysis.</li>
+                        <li><strong>Social Science:</strong> History, Geography, Political Science, and Economics – national and global awareness.</li>
+                        <li><strong>Computer Science / Information Technology:</strong> Programming basics, applications, digital literacy, and cyber safety.</li>
+                        <li><strong>Value Education & Life Skills:</strong> Ethics, leadership, career awareness, and personality development.</li>
+                        <li><strong>Physical Education:</strong> Sports, yoga, fitness, and health education.</li>
+                    </ul>
+
+                    <h4 class='font-bold text-slate-900 mt-4 mb-2'>Assessment & Evaluation</h4>
+                    <ul class='list-disc pl-5 space-y-1 mb-4'>
+                        <li>Unit tests, term exams, and pre-board examinations</li>
+                        <li>Internal assessments, projects, and practical exams</li>
+                        <li>Continuous feedback and remedial support</li>
+                    </ul>
+
+                    <h4 class='font-bold text-slate-900 mt-4 mb-2'>Career & Skill Development</h4>
+                    <ul class='list-disc pl-5 space-y-1 mb-4'>
+                        <li>Examination readiness and time management skills</li>
+                        <li>Critical thinking and problem-solving</li>
+                        <li>Communication and presentation skills</li>
+                        <li>Guidance for subject choices and career planning</li>
+                    </ul>
+                    <p>The High School academic program prepares students to become confident, disciplined, and future-ready learners, equipped to succeed in board examinations and beyond.</p>`
+                }
+            }
+        }))
+    })
+</script>
+
+<section class="py-12 md:py-20 bg-slate-50" x-data="programData">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
 
@@ -87,10 +219,10 @@
                             d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-3">Elementary School</h3>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Primary School</h3>
                 <p class="text-sm font-semibold text-accent-500 uppercase tracking-wide mb-4">Grades 1-5</p>
-                <p class="text-slate-600 mb-6 leading-relaxed">Building strong academic foundations in core subjects
-                    while encouraging creativity.</p>
+                <p class="text-slate-600 mb-6 leading-relaxed">Focusing on building a strong foundation of knowledge,
+                    skills, and values in a supportive environment.</p>
 
                 <ul class="space-y-2 mb-6 text-sm text-slate-600">
                     <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0" fill="none"
@@ -107,7 +239,7 @@
                         </svg>Arts Integration</li>
                 </ul>
 
-                <button @click="activeModal = 'elementary'"
+                <button @click="activeModal = 'primary'"
                     class="text-primary-600 font-bold hover:text-primary-700 flex items-center group-hover:translate-x-1 transition-transform">
                     Learn More <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -128,8 +260,8 @@
                 </div>
                 <h3 class="text-xl font-bold text-slate-900 mb-3">Middle School</h3>
                 <p class="text-sm font-semibold text-accent-500 uppercase tracking-wide mb-4">Grades 6-8</p>
-                <p class="text-slate-600 mb-6 leading-relaxed">Fostering independence and critical thinking through
-                    project-based learning.</p>
+                <p class="text-slate-600 mb-6 leading-relaxed">Strengthening conceptual understanding, critical
+                    thinking, and preparation for secondary education.</p>
 
                 <ul class="space-y-2 mb-6 text-sm text-slate-600">
                     <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0" fill="none"
@@ -170,8 +302,8 @@
                 </div>
                 <h3 class="text-xl font-bold text-slate-900 mb-3">High School</h3>
                 <p class="text-sm font-semibold text-accent-500 uppercase tracking-wide mb-4">Grades 9-12</p>
-                <p class="text-slate-600 mb-6 leading-relaxed">Rigorous college prep curriculum designed to prepare
-                    leaders for the future.</p>
+                <p class="text-slate-600 mb-6 leading-relaxed">Providing strong subject knowledge, analytical thinking,
+                    and preparation for board examinations.</p>
 
                 <ul class="space-y-2 mb-6 text-sm text-slate-600">
                     <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0" fill="none"
@@ -301,9 +433,22 @@
                     </svg>
                 </button>
 
-                <h3 class="text-2xl font-bold font-heading text-slate-900 mb-4">Program Details</h3>
-                <p class="text-slate-600 mb-6">Thank you for your interest! For a detailed curriculum guide and specific
-                    enrollment requirements for this program, please contact our admissions office.</p>
+                <template x-if="programDetails[activeModal]">
+                    <div>
+                        <h3 class="text-2xl font-bold font-heading text-slate-900 mb-4"
+                            x-text="programDetails[activeModal].title"></h3>
+                        <div class="text-slate-600 mb-6 text-left max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar"
+                            x-html="programDetails[activeModal].content"></div>
+                    </div>
+                </template>
+                <template x-if="!programDetails[activeModal]">
+                    <div>
+                        <h3 class="text-2xl font-bold font-heading text-slate-900 mb-4">Program Details</h3>
+                        <p class="text-slate-600 mb-6">Thank you for your interest! For a detailed curriculum guide and
+                            specific
+                            enrollment requirements for this program, please contact our admissions office.</p>
+                    </div>
+                </template>
 
                 <div class="bg-primary-50 rounded-xl p-4 flex items-start mb-6">
                     <div class="shrink-0 bg-white p-2 rounded-lg text-primary-600 shadow-sm mr-4">

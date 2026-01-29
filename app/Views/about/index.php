@@ -14,9 +14,11 @@
     </div>
 
     <div class="relative z-10 max-w-4xl mx-auto">
-        <h1 class="text-3xl md:text-6xl font-bold font-heading text-white mb-4 md:mb-6 animate-fade-in-up">Welcome To Moon Star Public School</h1>
+        <h1 class="text-3xl md:text-6xl font-bold font-heading text-white mb-4 md:mb-6 animate-fade-in-up">Welcome To
+            Moon Star Public School</h1>
         <p class="text-base md:text-xl text-primary-200 leading-relaxed font-light">
-            A world class educational group committed to holistic school education that engenders excellence in every sphere of human endeavor.
+            A world class educational group committed to holistic school education that engenders excellence in every
+            sphere of human endeavor.
         </p>
     </div>
 </section>
@@ -26,10 +28,14 @@
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center space-y-6">
             <p class="text-slate-700 text-base md:text-lg leading-relaxed">
-                Our Vision is to enable all students, without exception, to develop their talents to the full, and realize creative potential, including responsibilities of life and achievement of personal aims.
+                Our Vision is to enable all students, without exception, to develop their talents to the full, and
+                realize creative potential, including responsibilities of life and achievement of personal aims.
             </p>
             <p class="text-slate-700 text-base md:text-lg leading-relaxed">
-                The process evolves to instill values of Indian tradition in three simple yet meaningful words: <strong class="text-primary-700">"Satyam - Shivam - Sundaram"</strong> (Truth - Love - Beauty). The Motto of the school has been derived from ancient treasure of Vedas, which means <em>"Lead Me from Darkness to Light"</em>.
+                The process evolves to instill values of Indian tradition in three simple yet meaningful words: <strong
+                    class="text-primary-700">"Satyam - Shivam - Sundaram"</strong> (Truth - Love - Beauty). The Motto of
+                the school has been derived from ancient treasure of Vedas, which means <em>"Lead Me from Darkness to
+                    Light"</em>.
             </p>
             <div class="py-6 px-8 bg-gradient-to-r from-accent-50 to-primary-50 rounded-2xl border border-accent-200">
                 <p class="text-xl md:text-2xl font-heading font-bold text-primary-900 mb-2">
@@ -61,7 +67,9 @@
                 </div>
                 <h2 class="text-xl md:text-2xl font-bold font-heading text-primary-950 mb-3 md:mb-4">Our Vision</h2>
                 <p class="text-slate-600 leading-relaxed text-base md:text-lg">
-                    To create a future-ready generation by integrating academic excellence with skill-based education, nurturing confident, innovative, and responsible learners who contribute meaningfully to a self-reliant and progressive India.
+                    To create a future-ready generation by integrating academic excellence with skill-based education,
+                    nurturing confident, innovative, and responsible learners who contribute meaningfully to a
+                    self-reliant and progressive India.
                 </p>
             </div>
 
@@ -77,7 +85,9 @@
                 </div>
                 <h2 class="text-xl md:text-2xl font-bold font-heading text-primary-950 mb-3 md:mb-4">Our Mission</h2>
                 <p class="text-slate-600 leading-relaxed text-base md:text-lg">
-                    Our mission is to educate and empower young minds through holistic, skill-based, and value-oriented education, fostering critical thinking, creativity, and lifelong learning to build a knowledgeable, ethical, and progressive India.
+                    Our mission is to educate and empower young minds through holistic, skill-based, and value-oriented
+                    education, fostering critical thinking, creativity, and lifelong learning to build a knowledgeable,
+                    ethical, and progressive India.
                 </p>
             </div>
         </div>
@@ -88,7 +98,8 @@
 <section class="py-8 md:py-16 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-6 md:mb-8">
-            <span class="text-accent-500 font-bold tracking-wider uppercase text-xs md:text-sm">Leadership Messages</span>
+            <span class="text-accent-500 font-bold tracking-wider uppercase text-xs md:text-sm">Leadership
+                Messages</span>
             <h2 class="text-xl md:text-3xl font-bold font-heading text-primary-950 mt-2">Chairman's Message</h2>
             <p class="text-base text-slate-600 mt-1">Mr. Sompal Rana</p>
         </div>
@@ -97,25 +108,27 @@
                 <div class="md:col-span-1">
                     <div class="relative overflow-hidden rounded-xl aspect-square">
                         <img src="<?= base_url('uploads/chairman/WhatsApp Image 2025-12-19 at 18.42.31-2.jpeg') ?>"
-                            alt="Mr. Sompal Rana - Chairman"
-                            class="absolute inset-0 w-full h-full object-cover">
+                            alt="Mr. Sompal Rana - Chairman" class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-primary-900/20 to-transparent"></div>
                     </div>
                 </div>
                 <div class="md:col-span-3 space-y-3">
                     <div class="bg-white/80 rounded-lg p-3 md:p-4 border border-slate-200">
                         <p class="text-sm md:text-base leading-relaxed text-slate-700">
-                            We stand on the threshold of a new beginning, having covered a quarter of a century in the endeavor to create independent thinking, creative and sensitive individuals.
+                            We stand on the threshold of a new beginning, having covered a quarter of a century in the
+                            endeavor to create independent thinking, creative and sensitive individuals.
                         </p>
                     </div>
                     <div class="bg-white/80 rounded-lg p-3 md:p-4 border border-slate-200">
                         <p class="text-sm md:text-base leading-relaxed text-slate-700">
-                            Every child is unique, every child is important. We are committed to provide a progressive education system that steers the holistic education of a child.
+                            Every child is unique, every child is important. We are committed to provide a progressive
+                            education system that steers the holistic education of a child.
                         </p>
                     </div>
                     <div class="bg-white/80 rounded-lg p-3 md:p-4 border border-slate-200">
                         <p class="text-sm md:text-base leading-relaxed text-slate-700">
-                            We aim to develop a future generation that takes pride in our heritage and culture, with a yearning for global competitive excellence.
+                            We aim to develop a future generation that takes pride in our heritage and culture, with a
+                            yearning for global competitive excellence.
                         </p>
                     </div>
                     <div class="bg-primary-100/50 rounded-lg p-3 md:p-4 border border-primary-200">
@@ -134,57 +147,8 @@
     </div>
 </section>
 
-<!-- Principal's Message -->
-<section class="py-8 md:py-16 bg-slate-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-6 md:mb-8">
-            <h2 class="text-xl md:text-3xl font-bold font-heading text-primary-950">Principal's Message</h2>
-            <p class="text-base text-slate-600 mt-1">Dr. Rinkyla</p>
-        </div>
-        <div class="bg-white rounded-2xl p-4 md:p-8 shadow-lg border border-slate-100">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8">
-                <div class="md:col-span-1">
-                    <div class="relative overflow-hidden rounded-xl aspect-square">
-                        <img src="<?= base_url('uploads/principals/IMG_5656.JPG') ?>"
-                            alt="Dr. Rinkyla - Principal"
-                            class="absolute inset-0 w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-primary-900/20 to-transparent"></div>
-                    </div>
-                </div>
-                <div class="md:col-span-3 space-y-3">
-                    <div class="bg-slate-50 rounded-lg p-3 md:p-4 border border-slate-200">
-                        <p class="text-sm md:text-base leading-relaxed text-slate-700">
-                            If there is anything more powerful in this universe than faith and hope, it's love. Love is patient and kind. It gives hope and courage. Love heals and endures.
-                        </p>
-                    </div>
-                    <div class="bg-slate-50 rounded-lg p-3 md:p-4 border border-slate-200">
-                        <p class="text-sm md:text-base leading-relaxed text-slate-700">
-                            Trees give fruit, rivers water, sun warmth, flowers resplendency – nature gives selflessly. From these truths we learn our life's lesson – love and give.
-                        </p>
-                    </div>
-                    <div class="bg-slate-50 rounded-lg p-3 md:p-4 border border-slate-200">
-                        <p class="text-sm md:text-base leading-relaxed text-slate-700">
-                            It is our endeavor to instill in our children compassion, empathy, tenderness and humaneness, so they can forge a path of roses for themselves and humankind.
-                        </p>
-                    </div>
-                    <div class="bg-slate-50 rounded-lg p-3 md:p-4 border border-slate-200">
-                        <p class="text-sm md:text-base leading-relaxed text-slate-700">
-                            I believe in quality education, which will create sensitive caring citizens who will give something back to the society.
-                        </p>
-                    </div>
-                    <div class="bg-primary-100/50 rounded-lg p-3 md:p-4 border border-primary-200">
-                        <p class="text-sm md:text-base italic text-primary-700 font-medium">
-                            "May God be our guiding light and bless our institution."
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Director's Message -->
-<section class="py-8 md:py-16 bg-white">
+<section class="py-8 md:py-16 bg-slate-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-6 md:mb-8">
             <h2 class="text-xl md:text-3xl font-bold font-heading text-primary-950">Director's Message</h2>
@@ -194,46 +158,107 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8">
                 <div class="md:col-span-1">
                     <div class="relative overflow-hidden rounded-xl aspect-square">
-                        <img src="<?= base_url('uploads/directors/WhatsApp Image 2026-01-28 at 12.45.02.jpeg') ?>"
-                            alt="Mr. Dinesh Kaushik - Director"
-                            class="absolute inset-0 w-full h-full object-cover">
+                              <img src="<?= base_url('uploads/directors/WhatsApp Image 2026-01-28 at 12.45.02.jpeg') ?>"
+                        alt="Mr. Dinesh Kaushik - Director"
+                        class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-primary-900/20 to-transparent"></div>
                     </div>
                 </div>
                 <div class="md:col-span-3 space-y-3">
                     <div class="bg-white/80 rounded-lg p-3 md:p-4 border border-slate-200">
                         <p class="text-sm md:text-base leading-relaxed text-slate-700">
-                            Students and Visitors, I'm very delighted that you have taken the time to visit the Moon Star Public School website. Our hope is that you find our website to be user-friendly.
+                            Students and Visitors, I'm very delighted that you have taken the time to visit the Moon
+                            Star Public School website. Our hope is that you find our website to be user-friendly.
                         </p>
                     </div>
                     <div class="bg-primary-100/50 rounded-lg p-3 md:p-4 border border-primary-200">
                         <p class="text-sm md:text-base font-medium text-primary-800">
-                            "Education is the most powerful weapon which you can use to change the world." - Nelson Mandela
+                            "Education is the most powerful weapon which you can use to change the world." - Nelson
+                            Mandela
                         </p>
                     </div>
                     <div class="bg-white/80 rounded-lg p-3 md:p-4 border border-slate-200">
                         <p class="text-sm md:text-base leading-relaxed text-slate-700">
-                            We believe that Moon Star School offers an educational experience like no other to our children and will give them the qualifications and confidence they will need to play a leading role in tomorrow's society.
+                            We believe that Moon Star School offers an educational experience like no other to our
+                            children and will give them the qualifications and confidence they will need to play a
+                            leading role in tomorrow's society.
                         </p>
                     </div>
                     <div class="bg-white/80 rounded-lg p-3 md:p-4 border border-slate-200">
                         <p class="text-sm md:text-base leading-relaxed text-slate-700">
-                            The Health, Hygiene and Safety of our children and teachers is paramount. All our endeavors will fail if we, the School and the parents, are unable to forge a bond of trust.
+                            The Health, Hygiene and Safety of our children and teachers is paramount. All our endeavors
+                            will fail if we, the School and the parents, are unable to forge a bond of trust.
                         </p>
                     </div>
                     <div class="bg-white/80 rounded-lg p-3 md:p-4 border border-slate-200">
                         <p class="text-sm md:text-base leading-relaxed text-slate-700">
-                            We are committed to the philosophy that each member of the school community must have the opportunity for reaching his potential.
+                            We are committed to the philosophy that each member of the school community must have the
+                            opportunity for reaching his potential.
                         </p>
                     </div>
                     <div class="bg-accent-100/50 rounded-lg p-3 md:p-4 border border-accent-200">
                         <p class="text-sm md:text-base font-medium text-accent-800">
-                            "An opportunity is a gift by us to the students, what they can make of it, is their gift to us and to the society at large."
+                            "An opportunity is a gift by us to the students, what they can make of it, is their gift to
+                            us and to the society at large."
                         </p>
                     </div>
                     <div class="bg-white/80 rounded-lg p-3 md:p-4 border border-slate-200">
                         <p class="text-sm md:text-base italic text-accent-700">
-                            "We welcome you here, to a world of learning in enjoyable ways, to a world where every child is challenged to grow to his or her potential."
+                            "We welcome you
+                            here, to a world of learning in enjoyable ways, to a world where every child is challenged
+                            to grow to his or her potential."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Principal's Message -->
+<section class="py-8 md:py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-6 md:mb-8">
+            <h2 class="text-xl md:text-3xl font-bold font-heading text-primary-950">Principal's Message</h2>
+            <p class="text-base text-slate-600 mt-1">Dr. Rinkyla</p>
+        </div>
+        <div class="bg-white rounded-2xl p-4 md:p-8 shadow-lg border border-slate-100">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8">
+                <div class="md:col-span-1">
+                    <div class="relative overflow-hidden rounded-xl aspect-square">
+                        <img src="<?= base_url('uploads/principals/IMG_5656.JPG') ?>" alt="Dr. Rinkyla - Principal"
+                            class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary-900/20 to-transparent"></div>
+                    </div>
+                </div>
+                <div class="md:col-span-3 space-y-3">
+                    <div class="bg-slate-50 rounded-lg p-3 md:p-4 border border-slate-200">
+                        <p class="text-sm md:text-base leading-relaxed text-slate-700">
+                            If there is anything more powerful in this universe than faith and hope, it's love. Love is
+                            patient and kind. It gives hope and courage. Love heals and endures.
+                        </p>
+                    </div>
+                    <div class="bg-slate-50 rounded-lg p-3 md:p-4 border border-slate-200">
+                        <p class="text-sm md:text-base leading-relaxed text-slate-700">
+                            Trees give fruit, rivers water, sun warmth, flowers resplendency – nature gives selflessly.
+                            From these truths we learn our life's lesson – love and give.
+                        </p>
+                    </div>
+                    <div class="bg-slate-50 rounded-lg p-3 md:p-4 border border-slate-200">
+                        <p class="text-sm md:text-base leading-relaxed text-slate-700">
+                            It is our endeavor to instill in our children compassion, empathy, tenderness and
+                            humaneness, so they can forge a path of roses for themselves and humankind.
+                        </p>
+                    </div>
+                    <div class="bg-slate-50 rounded-lg p-3 md:p-4 border border-slate-200">
+                        <p class="text-sm md:text-base leading-relaxed text-slate-700">
+                            I believe in quality education, which will create sensitive caring citizens who will give
+                            something back to the society.
+                        </p>
+                    </div>
+                    <div class="bg-primary-100/50 rounded-lg p-3 md:p-4 border border-primary-200">
+                        <p class="text-sm md:text-base italic text-primary-700 font-medium">
+                            "May God be our guiding light and bless our institution."
                         </p>
                     </div>
                 </div>
