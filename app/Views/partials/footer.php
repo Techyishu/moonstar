@@ -10,7 +10,8 @@
             <!-- Brand Column -->
             <div class="lg:col-span-4 space-y-6">
                 <a href="<?= base_url() ?>" class="flex items-center">
-                    <img src="<?= base_url('uploads/logo.jpg') ?>" alt="Moon Star Public School Logo" class="h-16 w-auto">
+                    <img src="<?= base_url('uploads/logo.jpg') ?>" alt="Moon Star Public School Logo"
+                        class="h-16 w-auto">
                 </a>
                 <p class="text-slate-400 leading-relaxed text-sm">
                     Moon Star Public School is dedicated to providing excellence in education.
@@ -102,7 +103,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
-                        <span>moonstar.gharounda@gmail.com</span>
+                        <span>moonstar.gharaunda@gmail.com</span>
                     </li>
                 </ul>
             </div>

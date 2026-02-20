@@ -210,8 +210,8 @@
                     <h3 class="text-lg font-semibold text-blue-900 mb-2">Need More Information?</h3>
                     <p class="text-blue-800 text-sm">For any queries related to these documents or to request additional
                         information, please contact our administrative office or email us at <a
-                            href="mailto:moonstar.gharounda@gmail.com"
-                            class="underline font-medium">moonstar.gharounda@gmail.com</a></p>
+                            href="mailto:moonstar.gharaunda@gmail.com"
+                            class="underline font-medium">moonstar.gharaunda@gmail.com</a></p>
                 </div>
             </div>
         </div>

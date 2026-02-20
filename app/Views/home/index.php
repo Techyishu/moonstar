@@ -59,7 +59,7 @@
                     x-transition:enter-end="opacity-100 translate-y-0">
                     <span
                         class="inline-block py-1 px-3 rounded-full bg-white border border-white backdrop-blur-md text-primary-950 text-xs md:text-sm font-bold mb-4 md:mb-6 uppercase tracking-wider shadow-lg">
-                        Admissions Open 2025-26
+                        Admissions Open 2026-27
                     </span>
                     <h1 class="text-3xl md:text-6xl lg:text-7xl font-bold font-heading text-white tracking-tight mb-4 md:mb-6 leading-tight drop-shadow-lg"
                         x-text="slide.title"></h1>
@@ -148,7 +148,10 @@
                 class="group bg-white rounded-2xl p-5 md:p-8 shadow-soft hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100">
                 <div class="text-4xl mb-4">💻</div>
                 <h3 class="text-xl font-bold text-slate-900 mb-3 font-heading">Computer Lab</h3>
-                <p class="text-slate-600 leading-relaxed text-sm md:text-base">The Computer Lab is well-equipped with modern computers and updated software to help students develop essential digital skills. It provides hands-on learning in computer fundamentals, coding, internet usage, and educational applications, preparing students for a technology-driven world.</p>
+                <p class="text-slate-600 leading-relaxed text-sm md:text-base">The Computer Lab is well-equipped with
+                    modern computers and updated software to help students develop essential digital skills. It provides
+                    hands-on learning in computer fundamentals, coding, internet usage, and educational applications,
+                    preparing students for a technology-driven world.</p>
             </div>
 
             <!-- Physics Lab -->
@@ -156,7 +159,10 @@
                 class="group bg-white rounded-2xl p-5 md:p-8 shadow-soft hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100">
                 <div class="text-4xl mb-4">🔬</div>
                 <h3 class="text-xl font-bold text-slate-900 mb-3 font-heading">Physics Lab</h3>
-                <p class="text-slate-600 leading-relaxed text-sm md:text-base">The Physics Lab allows students to explore and understand the laws of nature through practical experiments. It is equipped with standard apparatus for mechanics, optics, electricity, and magnetism, helping students strengthen concepts learned in the classroom through observation and experimentation.</p>
+                <p class="text-slate-600 leading-relaxed text-sm md:text-base">The Physics Lab allows students to
+                    explore and understand the laws of nature through practical experiments. It is equipped with
+                    standard apparatus for mechanics, optics, electricity, and magnetism, helping students strengthen
+                    concepts learned in the classroom through observation and experimentation.</p>
             </div>
 
             <!-- Chemistry Lab -->
@@ -164,7 +170,10 @@
                 class="group bg-white rounded-2xl p-5 md:p-8 shadow-soft hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100">
                 <div class="text-4xl mb-4">🧪</div>
                 <h3 class="text-xl font-bold text-slate-900 mb-3 font-heading">Chemistry Lab</h3>
-                <p class="text-slate-600 leading-relaxed text-sm md:text-base">The Chemistry Lab is a safe and well-ventilated space designed for conducting chemical experiments. It contains all necessary equipment, chemicals, and safety measures to help students learn about chemical reactions, compounds, and laboratory techniques under proper supervision.</p>
+                <p class="text-slate-600 leading-relaxed text-sm md:text-base">The Chemistry Lab is a safe and
+                    well-ventilated space designed for conducting chemical experiments. It contains all necessary
+                    equipment, chemicals, and safety measures to help students learn about chemical reactions,
+                    compounds, and laboratory techniques under proper supervision.</p>
             </div>
 
             <!-- Biology Lab -->
@@ -172,7 +181,10 @@
                 class="group bg-white rounded-2xl p-5 md:p-8 shadow-soft hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100">
                 <div class="text-4xl mb-4">🌱</div>
                 <h3 class="text-xl font-bold text-slate-900 mb-3 font-heading">Biology Lab</h3>
-                <p class="text-slate-600 leading-relaxed text-sm md:text-base">The Biology Lab provides students with opportunities to study living organisms through experiments, models, charts, and microscopes. It supports practical learning in botany, zoology, and human biology, encouraging curiosity and scientific thinking.</p>
+                <p class="text-slate-600 leading-relaxed text-sm md:text-base">The Biology Lab provides students with
+                    opportunities to study living organisms through experiments, models, charts, and microscopes. It
+                    supports practical learning in botany, zoology, and human biology, encouraging curiosity and
+                    scientific thinking.</p>
             </div>
 
             <!-- Maths Lab -->
@@ -180,7 +192,10 @@
                 class="group bg-white rounded-2xl p-5 md:p-8 shadow-soft hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100">
                 <div class="text-4xl mb-4">➗</div>
                 <h3 class="text-xl font-bold text-slate-900 mb-3 font-heading">Maths Lab</h3>
-                <p class="text-slate-600 leading-relaxed text-sm md:text-base">The Maths Lab makes learning mathematics fun and interactive through models, puzzles, charts, and activities. It helps students understand mathematical concepts practically, develop logical reasoning, and enhance problem-solving skills.</p>
+                <p class="text-slate-600 leading-relaxed text-sm md:text-base">The Maths Lab makes learning mathematics
+                    fun and interactive through models, puzzles, charts, and activities. It helps students understand
+                    mathematical concepts practically, develop logical reasoning, and enhance problem-solving skills.
+                </p>
             </div>
         </div>
     </div>

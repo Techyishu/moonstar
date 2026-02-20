@@ -68,8 +68,8 @@
                 </svg>
             </div>
             <h3 class="text-lg md:text-xl font-bold text-slate-900 mb-2">Email Us</h3>
-            <p class="text-slate-500 text-sm mb-2"><a href="mailto:moonstar.gharounda@gmail.com"
-                    class="hover:text-primary-600 transition-colors">moonstar.gharounda@gmail.com</a></p>
+            <p class="text-slate-500 text-sm mb-2"><a href="mailto:moonstar.gharaunda@gmail.com"
+                    class="hover:text-primary-600 transition-colors">moonstar.gharaunda@gmail.com</a></p>
         </div>
     </div>
 </section>

@@ -179,7 +179,7 @@
                         <div class="space-y-2 text-sm">
                             <p class="font-medium text-slate-900">📞 Transport Office: +91-7404-266-266,
                                 +91-7404-116-673</p>
-                            <p class="font-medium text-slate-900">📧 Email: moonstar.gharounda@gmail.com</p>
+                            <p class="font-medium text-slate-900">📧 Email: moonstar.gharaunda@gmail.com</p>
                         </div>
                     </div>
                 </div>

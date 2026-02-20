@@ -459,8 +459,8 @@
                     </div>
                     <div>
                         <p class="text-sm font-bold text-slate-900">Email Admissions</p>
-                        <a href="mailto:moonstar.gharounda@gmail.com"
-                            class="text-sm text-primary-600 hover:underline">moonstar.gharounda@gmail.com</a>
+                        <a href="mailto:moonstar.gharaunda@gmail.com"
+                            class="text-sm text-primary-600 hover:underline">moonstar.gharaunda@gmail.com</a>
                     </div>
                 </div>
 
