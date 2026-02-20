@@ -96,4 +96,57 @@ class Auth extends BaseController
         session()->destroy();
         return redirect()->to('/admin/login')->with('success', 'You have been logged out successfully.');
     }
+
+    public function changePassword()
+    {
+        $data = [
+            'title' => 'Change Password',
+        ];
+
+        return view('admin/auth/change-password', $data);
+    }
+
+    public function updatePassword()
+    {
+        $rules = [
+            'current_password' => 'required',
+            'new_password' => 'required|min_length[6]',
+            'confirm_password' => 'required|matches[new_password]',
+        ];
+
+        $messages = [
+            'confirm_password' => [
+                'matches' => 'The confirm password does not match the new password.',
+            ],
+        ];
+
+        if (!$this->validate($rules, $messages)) {
+            return redirect()->back()->with('errors', $this->validator->getErrors());
+        }
+
+        $userModel = new UserModel();
+        $auditLog = new AuditLogModel();
+
+        $userId = session()->get('user_id');
+        $user = $userModel->find($userId);
+
+        if (!$user) {
+            return redirect()->back()->with('error', 'User not found.');
+        }
+
+        // Verify current password
+        if (!password_verify($this->request->getPost('current_password'), $user['password'])) {
+            return redirect()->back()->with('error', 'Current password is incorrect.');
+        }
+
+        // Update password (model will hash it via beforeUpdate callback)
+        $userModel->update($userId, [
+            'password' => $this->request->getPost('new_password'),
+        ]);
+
+        $auditLog->logActivity('Changed password');
+
+        return redirect()->to('/admin/dashboard')->with('success', 'Password changed successfully.');
+    }
 }
+

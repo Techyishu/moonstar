@@ -59,6 +59,10 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     // Dashboard
     $routes->get('dashboard', 'Admin\Dashboard::index');
 
+    // Change Password
+    $routes->get('change-password', 'Admin\Auth::changePassword');
+    $routes->post('change-password', 'Admin\Auth::updatePassword');
+
     // Notices Management
     $routes->get('notices', 'Admin\Notices::index');
     $routes->get('notices/create', 'Admin\Notices::create');
